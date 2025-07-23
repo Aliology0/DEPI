@@ -1,0 +1,41 @@
+.NET Framework (2002)
+Windows-only platform with support for WinForms, WPF, ASP.NET, etc.
+
+.NET Core (2016)
+A cross-platform, open-source reimplementation of .NET; introduced to address the limitations of the .NET Framework.
+
+.NET 5 (2020)
+Unified platform replacing .NET Core and .NET Framework.
+
+.NET 6 (2021, LTS)
+Long-Term Support version. Enhanced performance, simplified development.
+
+.NET 7 (2022)
+Faster, more cloud-optimized.
+
+.NET 8 (2023, LTS)
+Better container support, cross-platform improvements, AI/ML integration.
+
+.NET 6 and .NET 8 are LTS (Long-Term Support).
+
+.NET 9 (expected late 2024) focuses on further performance and AI integrations.
+
+================================================================================================================================================================================================
+A namespace in C# is a way to organize code and prevent naming conflicts.
+It groups related classes to help maintain and read code efficiently.
+
+================================================================================================================================================================================================
+.NET Core was introduced as a lightweight, fast, and modular version of .NET for cross-platform development.
+
+- Cross-Platform: Runs on Windows, Linux, and macOS.
+- High Performance: Improved runtime performance.
+- Open Source: Community and Microsoft collaboration on GitHub.
+- Modular: Developers can use only what they need via NuGet.org.
+================================================================================================================================================================================================
+In .NET development, a solution is a container that organizes one or more related projects within Visual Studio.
+It acts as a central hub for managing and building your application's code.
+
+
+- It helps in managing multiple projects (UI + API + Database).
+- It organizes code better.
+- Reuses libraries across apps.

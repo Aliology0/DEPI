@@ -1,0 +1,23 @@
+Types of JIT Compilation in .NET
+
+In the .NET ecosystem, JIT (Just-In-Time) compilation transforms Intermediate Language (IL) into native machine code.
+There are several types, each suited for different performance and memory scenarios:
+
+Normal JIT:
+
+Compiles IL code into native code at runtime, but only when a method is called for the first time.
+The compiled code is cached in memory.
+
+Econo JIT (Deprecated):
+Used in older versions like .NET Compact Framework, mainly for memory-constrained devices.
+Compiles methods when needed but discards the native code afterward to save memory.
+Not used in modern .NET versions (Core / 5+).
+
+Pre-JIT / Ahead-of-Time (AOT) Compilation:
+Converts IL to native code before runtime, eliminating JIT overhead completely.
+Tools:
+- NGen: Used in the .NET Framework to generate native images at install time.
+
+- ReadyToRun (R2R): Used in .NET Core / .NET 5+ for cross-platform AOT compilation.
+
+- Native AOT: Introduced in .NET 7+, it compiles the entire app to native code at publish time for best performance.

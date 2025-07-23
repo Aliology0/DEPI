@@ -1,0 +1,14 @@
+E:\Courses\DEPI\C#\Day01\C# D01 G01(Ali Emad Ali)\obj\Debug\net9.0\program.GeneratedMSBuildEditorConfig.editorconfig
+E:\Courses\DEPI\C#\Day01\C# D01 G01(Ali Emad Ali)\obj\Debug\net9.0\program.AssemblyInfoInputs.cache
+E:\Courses\DEPI\C#\Day01\C# D01 G01(Ali Emad Ali)\obj\Debug\net9.0\program.AssemblyInfo.cs
+E:\Courses\DEPI\C#\Day01\C# D01 G01(Ali Emad Ali)\obj\Debug\net9.0\program.csproj.CoreCompileInputs.cache
+E:\Courses\DEPI\C#\Day01\C# D01 G01(Ali Emad Ali)\bin\Debug\net9.0\program.exe
+E:\Courses\DEPI\C#\Day01\C# D01 G01(Ali Emad Ali)\bin\Debug\net9.0\program.deps.json
+E:\Courses\DEPI\C#\Day01\C# D01 G01(Ali Emad Ali)\bin\Debug\net9.0\program.runtimeconfig.json
+E:\Courses\DEPI\C#\Day01\C# D01 G01(Ali Emad Ali)\bin\Debug\net9.0\program.dll
+E:\Courses\DEPI\C#\Day01\C# D01 G01(Ali Emad Ali)\bin\Debug\net9.0\program.pdb
+E:\Courses\DEPI\C#\Day01\C# D01 G01(Ali Emad Ali)\obj\Debug\net9.0\program.dll
+E:\Courses\DEPI\C#\Day01\C# D01 G01(Ali Emad Ali)\obj\Debug\net9.0\refint\program.dll
+E:\Courses\DEPI\C#\Day01\C# D01 G01(Ali Emad Ali)\obj\Debug\net9.0\program.pdb
+E:\Courses\DEPI\C#\Day01\C# D01 G01(Ali Emad Ali)\obj\Debug\net9.0\program.genruntimeconfig.cache
+E:\Courses\DEPI\C#\Day01\C# D01 G01(Ali Emad Ali)\obj\Debug\net9.0\ref\program.dll
