@@ -1,0 +1,17 @@
+1)Remote Desktop Connection SW بستخدمو ف ايه ؟ 
+
+Remote Desktop Connection is a tool that allows you to control
+Another computer remotely, it also aids in accessing
+Servers remotely.(like team viewer)
+
+بحتاج أي عشان استخدمه؟
+
+The host's computer or server must be online.
+The host's IP Address, Username and password must be known.
+=======================================================================================
+2)How to map M:N relationship but unary
+
+We create an additional table that has a composite key that contains
+The PK of the original table is used twice, once for the supervisor
+And the other is for the supervisee and the attributes that
+The relationship itself has.

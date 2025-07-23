@@ -1,0 +1,49 @@
+1) Procedure cache , cold cache
+Procedure Cache:
+A memory area in SQL Server where compiled execution plans for stored procedures, functions,
+and queries are stored. This helps SQL Server reuse existing plans to save time and boost performance.
+
+Cold Cache:
+This refers to a situation where SQL Server has no cached execution plan or data pages in memory.
+Everything must be recompiled and fetched from disk, which causes slower performance.
+This often happens after a server restart or clearing the cache.
+============================================================================================================================================
+2) Input output parameter
+Input Parameters:
+Values you pass into the stored procedure to work with.
+
+Output Parameters:
+Values that the stored procedure sends back after processing. (LinkedIn Article)
+============================================================================================================================================
+3) triggers >> special type od SP
+A Trigger is a special kind of stored procedure
+that runs automatically in response to certain events on a table or view.
+============================================================================================================================================
+4) dynamic query >> SP with dynamic query >> merits of this + demirts
+
+Merits:
+- Flexible: Can build queries based on inputs.
+- Useful when working with dynamic table or column names.
+- Helps in building generic procedures.
+
+Demerits:
+- Risk of SQL Injection if not handled safely.
+- Hard to debug and trace.
+- Might bypass caching, affecting performance.
+============================================================================================================================================
+5) passing param >> order, name, default value
+
+When calling stored procedures, you can pass parameters in three ways:
+
+By Order:
+EXEC MyProc 1, 'Ali'
+
+By Name:
+EXEC MyProc @ID = 1, @Name = 'Ali'
+
+With Default Values:
+CREATE PROCEDURE MyProc
+    @ID INT = 0,
+    @Name VARCHAR(50) = 'Unknown'
+
+EXEC MyProc

@@ -1,0 +1,10 @@
+What is NTile()?
+
+NTile functon distributes the rows in an ordered partition into a specified number of groups.
+The groups are numbered, starting at one.
+For each row, NTILE returns the number of the group to which this row belongs.
+
+OR
+
+The SQL NTILE() is a window function that allows you to break
+a table into a specified number of approximately equal groups.
