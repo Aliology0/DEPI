@@ -1,0 +1,42 @@
+what's the difference between compiled and interpreted languages and in this way what about Csharp?
+
+The fundamental difference between compiled and interpreted languages lies in how their
+source code is translated and executed by a computer.
+
+Compiled Languages:
+- Source code is translated into machine-readable code (executable file) by a compiler before execution.
+
+- This translation process, known as compilation, occurs once.
+
+- The resulting executable can then be run directly by the operating system without needing the original source code or a separate translation program.
+
+- Examples: C, C++, and Rust.
+
+
+Interpreted Languages:
+- Source code is translated and executed line by line at runtime by an interpreter.
+
+- The interpreter reads and translates each instruction as the program runs.
+
+- This means the source code or a form of it is needed every time the program is executed.
+
+- Examples: Python, JavaScript, and Ruby.
+=============================================================================================================================
+Compare between implicit, explicit, Convert and parse casting
+
+Implicit:
+Used when converting from a smaller to a larger or compatible data type (int to double).
+It happens automatically without needing any extra code because there's no risk of data loss.
+
+Explicit:
+Used when converting from a larger or incompatible type to a smaller type (double to int).
+You must manually specify the conversion using a cast, and there’s a risk of data loss or runtime errors.
+
+Convert:
+Uses the Convert class (Convert.ToInt32) to safely convert between types, including from strings or objects.
+It handles null values gracefully in many cases and is more flexible than simple casting.
+
+Parse:
+Used to convert a string to a value type (int.Parse("123")).
+It throws an exception if the string is null, empty, or in the wrong format,
+so it should only be used when the input is guaranteed to be valid.

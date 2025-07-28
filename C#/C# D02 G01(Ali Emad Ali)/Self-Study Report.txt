@@ -1,0 +1,55 @@
+1) How to customize the garbage collector : C# 5.0 in a Nutshell Book
+
+1. Generational Collection
+The managed heap is divided into three generations:
+Gen0: New objects
+Gen1: Objects that survived one collection
+Gen2: Long-lived objects
+Gen0 collections are fast and frequent (usually <1ms).
+Gen2 collections are slower and happen less often (~100ms or more).
+This design makes short-lived objects (like local StringBuilders) efficient to manage.
+
+
+2. Large Object Heap (LOH)
+Used for objects larger than 85,000 bytes.
+Not compacted, to avoid expensive memory operations.
+Can become fragmented, since it’s hard to reuse memory precisely.
+All LOH objects are treated as Gen2 and not collected generationally.
+
+
+3. Background (Concurrent) Collection
+Gen2 collections can be performed in the background (workstation CLR only).
+Allows UI and threads to continue running during Gen2 collection.
+Starting from .NET CLR 4.0, background collection is smarter and more responsive.
+Server CLR doesn't use background collection but instead uses all CPU cores to reduce collection time.
+
+
+4. GC Notifications (Server CLR)
+- From .NET Framework 3.5 SP1, server GC can notify just before a full GC.
+- Useful in server farms: temporarily reroute requests, force GC, then resume.
+Use GC.RegisterForFullGCNotification, GC.WaitForFullGCApproach, and GC.WaitForFullGCComplete.
+
+
+5. Forcing Garbage Collection
+Use GC.Collect() to manually trigger GC.
+GC.Collect(0) → Gen0 only
+GC.Collect() → Full collection
+Generally not recommended, as it may harm performance and interfere with GC tuning.
+Useful in special cases:
+- Apps that go idle for long periods (e.g., Windows Services)
+- Testing classes with finalizers
+
+C# 5.0 in a Nutshell Book
+=========================================================================================================================
+2) Bitwise Operator
+
+The bitwise and shift operators include unary bitwise complement, binary left and right shift,unsigned right shift,
+and the binary logical AND, OR, and exclusive OR operators.
+These operands take operands of the integral numeric types or the char type.
+
+- Unary ~ (bitwise complement) operator
+- Binary << (left shift), >> (right shift), and >>> (unsigned right shift) operators
+- Binary & (logical AND), | (logical OR), and ^ (logical exclusive OR) operators
+
+https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/bitwise-and-shift-operators
+(I’ve read most of the topics from this link, and this is my summarized and simplified version of what I read.)

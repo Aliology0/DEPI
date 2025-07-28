@@ -1,0 +1,15 @@
+E:\Courses\DEPI\C#\Day02\C# D02 G01(Ali Emad Ali)\Problems\Day 2\obj\Debug\net5.0\Day 2.GeneratedMSBuildEditorConfig.editorconfig
+E:\Courses\DEPI\C#\Day02\C# D02 G01(Ali Emad Ali)\Problems\Day 2\obj\Debug\net5.0\Day 2.AssemblyInfoInputs.cache
+E:\Courses\DEPI\C#\Day02\C# D02 G01(Ali Emad Ali)\Problems\Day 2\obj\Debug\net5.0\Day 2.AssemblyInfo.cs
+E:\Courses\DEPI\C#\Day02\C# D02 G01(Ali Emad Ali)\Problems\Day 2\obj\Debug\net5.0\Day 2.csproj.CoreCompileInputs.cache
+E:\Courses\DEPI\C#\Day02\C# D02 G01(Ali Emad Ali)\Problems\Day 2\bin\Debug\net5.0\Day 2.exe
+E:\Courses\DEPI\C#\Day02\C# D02 G01(Ali Emad Ali)\Problems\Day 2\bin\Debug\net5.0\Day 2.deps.json
+E:\Courses\DEPI\C#\Day02\C# D02 G01(Ali Emad Ali)\Problems\Day 2\bin\Debug\net5.0\Day 2.runtimeconfig.json
+E:\Courses\DEPI\C#\Day02\C# D02 G01(Ali Emad Ali)\Problems\Day 2\bin\Debug\net5.0\Day 2.runtimeconfig.dev.json
+E:\Courses\DEPI\C#\Day02\C# D02 G01(Ali Emad Ali)\Problems\Day 2\bin\Debug\net5.0\Day 2.dll
+E:\Courses\DEPI\C#\Day02\C# D02 G01(Ali Emad Ali)\Problems\Day 2\bin\Debug\net5.0\Day 2.pdb
+E:\Courses\DEPI\C#\Day02\C# D02 G01(Ali Emad Ali)\Problems\Day 2\obj\Debug\net5.0\Day 2.dll
+E:\Courses\DEPI\C#\Day02\C# D02 G01(Ali Emad Ali)\Problems\Day 2\obj\Debug\net5.0\refint\Day 2.dll
+E:\Courses\DEPI\C#\Day02\C# D02 G01(Ali Emad Ali)\Problems\Day 2\obj\Debug\net5.0\Day 2.pdb
+E:\Courses\DEPI\C#\Day02\C# D02 G01(Ali Emad Ali)\Problems\Day 2\obj\Debug\net5.0\Day 2.genruntimeconfig.cache
+E:\Courses\DEPI\C#\Day02\C# D02 G01(Ali Emad Ali)\Problems\Day 2\obj\Debug\net5.0\ref\Day 2.dll
