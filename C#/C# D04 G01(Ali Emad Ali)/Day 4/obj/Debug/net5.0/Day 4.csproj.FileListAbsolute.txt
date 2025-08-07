@@ -1,0 +1,15 @@
+E:\Courses\DEPI\C#\Day04\C# D04 G01(Ali Emad Ali)\Day 4\bin\Debug\net5.0\Day 4.exe
+E:\Courses\DEPI\C#\Day04\C# D04 G01(Ali Emad Ali)\Day 4\bin\Debug\net5.0\Day 4.deps.json
+E:\Courses\DEPI\C#\Day04\C# D04 G01(Ali Emad Ali)\Day 4\bin\Debug\net5.0\Day 4.runtimeconfig.json
+E:\Courses\DEPI\C#\Day04\C# D04 G01(Ali Emad Ali)\Day 4\bin\Debug\net5.0\Day 4.runtimeconfig.dev.json
+E:\Courses\DEPI\C#\Day04\C# D04 G01(Ali Emad Ali)\Day 4\bin\Debug\net5.0\Day 4.dll
+E:\Courses\DEPI\C#\Day04\C# D04 G01(Ali Emad Ali)\Day 4\bin\Debug\net5.0\Day 4.pdb
+E:\Courses\DEPI\C#\Day04\C# D04 G01(Ali Emad Ali)\Day 4\obj\Debug\net5.0\Day 4.GeneratedMSBuildEditorConfig.editorconfig
+E:\Courses\DEPI\C#\Day04\C# D04 G01(Ali Emad Ali)\Day 4\obj\Debug\net5.0\Day 4.AssemblyInfoInputs.cache
+E:\Courses\DEPI\C#\Day04\C# D04 G01(Ali Emad Ali)\Day 4\obj\Debug\net5.0\Day 4.AssemblyInfo.cs
+E:\Courses\DEPI\C#\Day04\C# D04 G01(Ali Emad Ali)\Day 4\obj\Debug\net5.0\Day 4.csproj.CoreCompileInputs.cache
+E:\Courses\DEPI\C#\Day04\C# D04 G01(Ali Emad Ali)\Day 4\obj\Debug\net5.0\Day 4.dll
+E:\Courses\DEPI\C#\Day04\C# D04 G01(Ali Emad Ali)\Day 4\obj\Debug\net5.0\refint\Day 4.dll
+E:\Courses\DEPI\C#\Day04\C# D04 G01(Ali Emad Ali)\Day 4\obj\Debug\net5.0\Day 4.pdb
+E:\Courses\DEPI\C#\Day04\C# D04 G01(Ali Emad Ali)\Day 4\obj\Debug\net5.0\Day 4.genruntimeconfig.cache
+E:\Courses\DEPI\C#\Day04\C# D04 G01(Ali Emad Ali)\Day 4\obj\Debug\net5.0\ref\Day 4.dll

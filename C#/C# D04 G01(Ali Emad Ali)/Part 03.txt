@@ -1,0 +1,69 @@
+4- self study report
+
+1) Jagged Array?
+A jagged array (array of arrays) is an array whose elements are arrays themselves,
+and these inner arrays can be of different lengths.
+
+It’s like a 2D array, but irregular in shape, each row (or sub-array) can have a different number of columns.
+==============================================================================================================================================
+2) What is Array of objects?
+An array of objects in C# is simply an array where each element is an object, 
+either of a custom class or even the base object type.
+It allows you to store multiple instances of a class in a single, indexed collection.
+
+class Student
+{
+    public string Name;
+    public int Age;
+}
+
+Student[] students = new Student[3];
+
+students[0] = new Student { Name = "Ali", Age = 20 };
+students[1] = new Student { Name = "Ahmed", Age = 22 };
+students[2] = new Student { Name = "Abdelrahman", Age = 21 };
+
+foreach (Student s in students)
+{
+    Console.WriteLine($"{s.Name} - {s.Age} years old");
+}
+==============================================================================================================================================
+
+
+==============================================================================================================================================
+==============================================================================================================================================
+5- what’s the default size of stack and heap and what are the consideration
+
+Stack:
+Default Size (on .NET Framework/.NET Core):
+- Thread stack size is typically 1 MB (1,048,576 bytes).
+- On 64-bit systems, it may be larger (can go up to 4 MB in some scenarios).
+
+Heap:
+- There is no fixed default size.
+- It grows dynamically as needed.
+- The .NET Garbage Collector (GC) manages memory allocation and deallocation.
+
+The maximum heap size is limited by:
+
+- Available system memory.
+- Process architecture (e.g., 32-bit vs 64-bit).
+- 32-bit: ~2 GB of memory (default max per process).
+- 64-bit: Practically much more (depends on RAM).
+
+			Stack				Heap
+Allocation speed	Very fast			Slower than stack
+Memory size		Fixed				Dynamic (managed by GC)
+Lifespan		Short				Long (until GC collects)
+Usage			Value types, method calls	Reference types, objects
+Access pattern		LIFO (Last In First Out)	Random
+Management		Automatically by system		Managed by Garbage Collector
+==============================================================================================================================================
+==============================================================================================================================================
+6- what is time complexity
+
+Time Complexity is a way to describe how the runtime of an algorithm increases as the input size grows.
+It helps you estimate How efficient your algorithm is and Whether your code will handle large inputs well.
+
+Time complexity significantly depends on the number of loops and the use of recursion in your code,
+as they directly affect how many operations are performed.
