@@ -1,0 +1,42 @@
+1)Casting Operator? function (Can be implemented)
+
+In C#, the explicit operator keyword is used to define a user-defined type
+conversion operator that requires an explicit cast by the programmer.
+
+(I didn't talk about the Implicit operator keyword because the CLR does that automatically)
+======================================================================================================================
+======================================================================================================================
+======================================================================================================================
+======================================================================================================================
+2)Upcasting VS Downcasting
+
+1. Upcasting : Converting from a derived class to a base class.
+
+- Always safe (no data loss).
+- Happens implicitly (no cast needed).
+
+Example:
+class Animal { }
+class Dog : Animal { }
+
+Animal A = new Dog();
+
+A Dog is an Animal, so the base part is always there (Safe).
+======================================================================================================================
+2. Downcasting : Converting from a base class to a derived class.
+
+- Not always safe — may throw an exception if the object isn’t actually that derived type.
+- Requires an explicit cast.
+
+Example:
+class Animal { }
+class Dog : Animal { }
+
+Animal A = new Animal();
+Dog D = (Dog)A;          // throws InvalidCastException at runtime
+
+
+Not all animals are dogs, so the base part is not always there (Unsafe).
+
+
+
