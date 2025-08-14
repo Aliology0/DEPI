@@ -1,0 +1,72 @@
+1) Can Constructor be private?
+
+A constructor can be private, for it is when you want to restrict object creation so that only the class itself can control how and when instances are made.
+
+Singleton Pattern (most famous case)
+
+Goal: Allow only one instance of a class in the whole application.
+
+Example:
+
+public class DatabaseConnectionManager
+{
+    private static DatabaseConnectionManager _instance;
+    private DatabaseConnectionManager() { } // private constructor
+
+    public static DatabaseConnectionManager GetInstance()
+    {
+        if (_instance == null)
+            _instance = new DatabaseConnectionManager();
+        return _instance;
+    }
+}
+
+
+
+==========================================================================================================================
+2) BCL >> Override tostring()
+
+
+ToString() is a virtual method in System.Object (which is part of the BCL).
+Every class in C# inherits ToString().
+By default, it returns the class’s fully qualified name ("Namespace.ClassName").
+Override it when you want a meaningful text representation of your object.
+
+public class Employee
+{
+    public string Name { get; set; }
+    public int Age { get; set; }
+
+    public override string ToString()
+    {
+        return $"Employee: {Name}, Age: {Age}";
+    }
+}
+
+Employee emp = new Employee { Name = "Ali", Age = 25 };	
+Console.WriteLine(emp.ToString()); // Output: Employee: Ali, Age: 25
+==========================================================================================================================
+3) struct : u can't create less ctor in struct in .net 5 >> .net 6.0 or greater >> why ?
+
+In .NET 5 and earlier, structs were very restricted in how constructors worked:
+
+You could not declare your own parameterless (default) constructor.
+The compiler always auto-generated a hidden default constructor that simply zero-initialized all fields.
+This was done to keep structs blazingly fast and blittable (safe to copy directly in memory without custom init logic).
+
+
+The primary reason for allowing explicit parameterless constructors in structs in 
+C# 10 (and .NET 6) was to enable field initializers for structs. Before this change,
+if a struct had fields with initializers, a compilation error would occur
+because there was no way to ensure these initializers were run when the struct was created using new StructName().
+
+By allowing explicit parameterless constructors, the language now provides a mechanism to:
+
+Execute field initializers:
+When an explicit parameterless constructor is defined, it can ensure that any field initializers
+declared in the struct are executed during the construction process.
+
+Provide custom default initialization logic:
+Developers can now define custom logic within the parameterless constructor to initialize struct fields
+to values other than their default zero-initialized state, providing more control over the struct's initial state.
+

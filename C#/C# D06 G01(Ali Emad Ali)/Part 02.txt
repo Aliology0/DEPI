@@ -1,0 +1,109 @@
+What is copy constructor?
+
+A copy constructor is a special type of constructor that creates a new object as a copy of an existing object
+
+public class Employee
+{
+    public string Name;
+
+    // Normal constructor
+    public Employee(string name)
+    {
+        Name = name;
+    }
+
+    // Copy constructor
+    public Employee(Employee other)
+    {
+        Name = other.Name;
+    }
+}
+
+Employee emp1 = new Employee("Ali");
+Employee emp2 = new Employee(emp1);
+
+Console.WriteLine(emp1.Name); //Output: Ali
+Console.WriteLine(emp2.Name); //Output: Ali
+========================================================================================================
+What is Indexer, when used, as business mention cases u have to utilize it?
+
+An indexer in C# lets you make an object behave like an array,
+so you can access its elements using the [] syntax.
+It’s basically a special property that allows you to index into an object instead of calling explicit methods like GetItem() or SetItem().
+
+public class MyCollection
+{
+    private string[] data = new string[5];
+
+    public string this[int index]
+    {
+        get { return data[index]; }
+        set { data[index] = value; }
+    }
+}
+
+MyCollection collection = new MyCollection();
+collection[0] = "Ali";        // sets value
+Console.WriteLine(collection[0]); // gets value "Ali"
+
+You use indexers when You want your object to provide array-like access to internal data.
+
+Business Case:
+
+Employees["Ali"] returns the Employee object for Ali.
+Could also allow Employees[0] to return the first employee.
+========================================================================================================
+Summarize keywords we have learnt last lecture
+
+1. public
+
+Meaning: Accessible from anywhere in the program (inside or outside the assembly).
+Use Case: When you want other classes, projects, or libraries to freely access a member.
+
+2. private
+
+Meaning: Accessible only inside the same class or struct.
+Use Case: For hiding internal details and ensuring encapsulation.
+
+3. internal
+
+Meaning: Accessible anywhere inside the same assembly (project), but not from another project.
+Use Case: When you want to share code within your project but hide it from external projects.
+
+4. protected
+
+Meaning: Accessible inside the same class and in derived (inherited) classes.
+Use Case: To allow subclasses to use and override base class members.
+
+5. private protected
+
+Meaning: Accessible only within the same class or derived classes that are in the same assembly.
+Use Case: Rare, used when you want subclass access but only if it’s in the same project.
+
+6. protected internal
+
+Meaning: Accessible in the same assembly OR in derived classes in other assemblies.
+Use Case: Combination of protected and internal rules.
+
+7. override
+
+Meaning: Used in a derived class to replace a virtual or abstract method from a base class.
+Use Case: To change the implementation of a method while keeping the same signature.
+
+8. get / set
+
+Meaning: Accessors inside a property.
+get → returns the value of the property.
+
+set → assigns a value to the property.
+Use Case: To control how a property is read and written (can add validation inside them).
+
+9. default
+
+Meaning: Returns the default value for a type (0 for numbers, null for reference types, false for bool).
+Use Case: To initialize variables to their type’s default without knowing the type at compile time.
+
+10. readonly
+
+Meaning: Field can only be assigned a value at declaration or in the constructor, and can’t be changed later.
+Use Case: For data that should be set once and remain constant for the life of the object, but needs runtime assignment (unlike const which is compile-time).
