@@ -1,0 +1,80 @@
+1. Inheritance (Is-a relationship)
+A derived class inherits members from a base class.
+
+Expresses an is-a relationship.
+
+Example:
+
+class Vehicle { }
+class Car : Vehicle { }  // Car IS-A Vehicle
+=============================================================================================================================
+2. Association (Uses relationship)
+One class uses another class.
+
+This is a general relationship.
+
+Example:
+
+class Driver
+{
+    public void Drive(Car car)  // Driver uses Car
+    {
+        Console.WriteLine("Driving a car");
+    }
+}
+=============================================================================================================================
+3. Aggregation (Has-a relationship, weak ownership)
+One class contains another class, but the contained object can exist independently.
+
+Expresses a has-a relationship.
+
+Example:
+
+class Engine { }
+
+class Car
+{
+    public Engine Engine { get; set; }   // Car HAS-A Engine
+    public Car(Engine engine)
+    {
+        Engine = engine;
+    }
+}
+
+
+Here, an Engine can exist outside the Car.
+=============================================================================================================================
+4. Composition (Strong ownership)
+A stronger form of aggregation.
+
+If the container is destroyed, the contained objects are also destroyed.
+
+Example:
+
+class Car
+{
+    private Engine engine;   // Car owns Engine fully
+
+    public Car()
+    {
+        engine = new Engine(); // Engine created inside Car
+    }
+}
+
+
+Here, the Engine cannot exist without the Car.
+=============================================================================================================================
+5. Dependency
+A very loose relationship — one class depends on another temporarily.
+
+Example:
+
+class Report { }
+
+class Printer
+{
+    public void Print(Report report)   // Printer depends on Report
+    {
+        Console.WriteLine("Printing report...");
+    }
+}

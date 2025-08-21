@@ -1,0 +1,128 @@
+1) General ctor
+
+General (Parameterized) Constructor
+
+A general constructor (more formally called a parameterized constructor) is a constructor that
+accepts arguments to initialize an object’s fields or properties at the time of creation.
+Unlike the default constructor, which initializes values with defaults, 
+a parameterized constructor ensures that an object starts in a fully defined state.
+
+
+Characteristics of a General Constructor
+
+
+Suppresses the default constructor - if you only define a parameterized constructor,
+the compiler does not generate the default one (you must write it explicitly if needed).
+
+Supports constructor chaining - can delegate initialization to another constructor in
+the same class (using this) or a parent class (using base).
+=============================================================================================================================
+2) Memory model and the purpose of struct in C#
+
+1- Memory Model in C#
+C# uses a managed memory model under the .NET CLR (Common Language Runtime).
+
+Stack Memory
+Stores value types (int, double, struct) and method call information.
+Fast allocation and deallocation (automatically freed when the method ends).
+
+Heap Memory
+Stores reference types (class, object, string, arrays).
+Managed by the Garbage Collector (GC) to reclaim unused memory.
+
+Reference vs Value Types
+Value type → contains the actual data (copied when assigned).
+Reference type → stores a reference (pointer) to the object on the heap.
+
+2- Purpose of struct in C#
+A struct is a value type in C#.
+It is like a lightweight class, mainly used for small, immutable objects that represent single values or data bundles.
+
+Characteristics of struct
+
+- Stored on the stack (faster allocation, no garbage collection needed).
+- Cannot inherit from another class or struct (but can implement interfaces).
+- Best for small, simple objects that don’t need reference semantics.
+- Provides better performance than classes when used in large numbers.
+- Useful when immutability and low memory overhead are important.
+=============================================================================================================================
+3) Save in memory related to overloading function
+
+What Overloading Does:
+
+Provides readability and ease of use (you don’t need different method names like SumInt, SumDouble).
+It’s a syntactic sugar feature — the compiler resolves which method to call at compile time.
+So the benefit is not memory saving, but cleaner code and better maintainability.
+
+Using Generics does save memory tho.
+=============================================================================================================================
+4) Early Binding Vs Late Binding >> new Vs override
+
+Early Binding (Static Binding)
+
+Method call is resolved at compile time.
+No polymorphism involved.
+In C#, this happens when you use the new keyword to hide a base method.
+With new, the method chosen depends on the reference type (Parent/Child), not the object type.
+That’s early/static binding.
+
+
+Late Binding (Dynamic Binding)
+
+Method call is resolved at runtime.
+Achieved using virtual in base class and override in derived class.
+True polymorphism.
+With override, the method chosen depends on the object type, not the reference type.
+That’s late/dynamic binding.
+=============================================================================================================================
+5) what is static and dynamic binding
+
+1. Static Binding (Early Binding)
+The method to be called is decided at compile time.
+Also called early binding.
+
+Example (C#):
+
+class Calculator
+{
+    public int Add(int a, int b) => a + b;           // Overload #1
+    public double Add(double a, double b) => a + b; // Overload #2
+}
+
+class Program
+{
+    static void Main()
+    {
+        Calculator calc = new Calculator();
+        Console.WriteLine(calc.Add(2, 3));     // Compiler decides: calls int Add
+        Console.WriteLine(calc.Add(2.5, 3.5)); // Compiler decides: calls double Add
+    }
+}
+Here, the compiler already knows which method to call → static/early binding.
+
+2. Dynamic Binding (Late Binding)
+The method to be called is decided at runtime.
+Also called late binding.
+Happens with method overriding + polymorphism (using virtual and override in C#).
+
+Example (C#):
+
+class Animal
+{
+    public virtual void Speak() => Console.WriteLine("Animal sound");
+}
+
+class Dog : Animal
+{
+    public override void Speak() => Console.WriteLine("Bark");
+}
+
+class Program
+{
+    static void Main()
+    {
+        Animal a = new Dog();  
+        a.Speak();  // Runtime decides → calls Dog.Speak()
+    }
+}
+Here, the actual object (Dog) decides which method to call → dynamic/late binding.
