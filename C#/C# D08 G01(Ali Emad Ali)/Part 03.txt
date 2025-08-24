@@ -1,0 +1,29 @@
+1) What Acces Modifiers are allowed for the interface?
+
+In C#, an interface can only be declared as public or internal.
+By default, if no modifier is specified, the interface is internal, meaning it is accessible only within the same assembly.
+Using public makes the interface available across different assemblies.
+Other modifiers like private, protected, or protected internal are not allowed
+on interfaces because interfaces are meant to define contracts for broader use.
+=============================================================================================================================
+2) Memory Allocation for interface
+
+An interface itself does not occupy memory because it only defines a 
+contract (a set of methods, properties, events, or indexers without implementation).
+Memory is allocated only when a class or struct implements the interface and an
+instance of that class/struct is created. At runtime, a reference to the object can be stored in a 
+variable of the interface type, but the actual memory is consumed by the implementing class, not the interface.
+=============================================================================================================================
+3) Specification design pattern : interface
+
+The Specification design pattern is a behavioral pattern that uses interfaces to define business 
+rules or criteria in a reusable way. It allows developers to encapsulate logic into small, composable units 
+that can be combined to form complex rules. Typically, an ISpecification<T> interface is defined with a method 
+like IsSatisfiedBy(T entity). Different specifications implement this interface, and they can be combined using 
+logical operations (AND, OR, NOT). This makes code more flexible, readable, and maintainable, especially in 
+scenarios like filtering objects in collections or applying validation rules.
+=============================================================================================================================
+4) What is operator overloading
+
+Operator overloading is a feature in C# that allows developers to define custom behavior for operators (+, -, *, /) for user-defined types (classes and structs).
+This enables intuitive and natural manipulation of objects using standard operators.

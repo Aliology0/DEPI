@@ -1,0 +1,17 @@
+2- What we mean by coding against interface rather than class ? and if u get it so What we mean by code against abstraction not concreteness ?
+
+Coding against interfaces rather than classes promotes loose coupling and enhances flexibility.
+It allows developers to depend on abstractions (interfaces) rather than concrete implementations (classes), making it easier
+to change or replace implementations without affecting the code that uses them.
+
+
+Coding against abstraction means focusing on the essential characteristics and behaviors of an object,
+rather than its specific implementation details. This leads to more modular and maintainable code.
+
+=========================================================================================================================
+3- What is abstraction as a guideline and how we can implement this through what we have studied ?
+
+Abstraction is the concept of hiding the complex implementation details and showing only the essential features of the object.
+It can be implemented through abstract classes and interfaces, allowing us to define a contract for what a class can do
+without specifying how it does it. This promotes a clear separation between the interface and implementation, making code
+easier to understand and maintain.
