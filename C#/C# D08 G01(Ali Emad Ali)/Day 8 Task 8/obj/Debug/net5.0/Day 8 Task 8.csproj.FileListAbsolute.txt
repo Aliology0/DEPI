@@ -1,0 +1,15 @@
+E:\Courses\DEPI\C#\Day08\C# D08 G01(Ali Emad Ali)\Day 8 Task 8\bin\Debug\net5.0\Day 8 Task 8.exe
+E:\Courses\DEPI\C#\Day08\C# D08 G01(Ali Emad Ali)\Day 8 Task 8\bin\Debug\net5.0\Day 8 Task 8.deps.json
+E:\Courses\DEPI\C#\Day08\C# D08 G01(Ali Emad Ali)\Day 8 Task 8\bin\Debug\net5.0\Day 8 Task 8.runtimeconfig.json
+E:\Courses\DEPI\C#\Day08\C# D08 G01(Ali Emad Ali)\Day 8 Task 8\bin\Debug\net5.0\Day 8 Task 8.runtimeconfig.dev.json
+E:\Courses\DEPI\C#\Day08\C# D08 G01(Ali Emad Ali)\Day 8 Task 8\bin\Debug\net5.0\Day 8 Task 8.dll
+E:\Courses\DEPI\C#\Day08\C# D08 G01(Ali Emad Ali)\Day 8 Task 8\bin\Debug\net5.0\Day 8 Task 8.pdb
+E:\Courses\DEPI\C#\Day08\C# D08 G01(Ali Emad Ali)\Day 8 Task 8\obj\Debug\net5.0\Day 8 Task 8.GeneratedMSBuildEditorConfig.editorconfig
+E:\Courses\DEPI\C#\Day08\C# D08 G01(Ali Emad Ali)\Day 8 Task 8\obj\Debug\net5.0\Day 8 Task 8.AssemblyInfoInputs.cache
+E:\Courses\DEPI\C#\Day08\C# D08 G01(Ali Emad Ali)\Day 8 Task 8\obj\Debug\net5.0\Day 8 Task 8.AssemblyInfo.cs
+E:\Courses\DEPI\C#\Day08\C# D08 G01(Ali Emad Ali)\Day 8 Task 8\obj\Debug\net5.0\Day 8 Task 8.csproj.CoreCompileInputs.cache
+E:\Courses\DEPI\C#\Day08\C# D08 G01(Ali Emad Ali)\Day 8 Task 8\obj\Debug\net5.0\Day 8 Task 8.dll
+E:\Courses\DEPI\C#\Day08\C# D08 G01(Ali Emad Ali)\Day 8 Task 8\obj\Debug\net5.0\refint\Day 8 Task 8.dll
+E:\Courses\DEPI\C#\Day08\C# D08 G01(Ali Emad Ali)\Day 8 Task 8\obj\Debug\net5.0\Day 8 Task 8.pdb
+E:\Courses\DEPI\C#\Day08\C# D08 G01(Ali Emad Ali)\Day 8 Task 8\obj\Debug\net5.0\Day 8 Task 8.genruntimeconfig.cache
+E:\Courses\DEPI\C#\Day08\C# D08 G01(Ali Emad Ali)\Day 8 Task 8\obj\Debug\net5.0\ref\Day 8 Task 8.dll
