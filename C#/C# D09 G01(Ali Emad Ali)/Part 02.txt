@@ -1,0 +1,16 @@
+2- What we mean by Generalization concept using Generics ?
+
+Generalization with Generics means writing code that works with different data types without duplicating logic.
+Instead of creating multiple versions of a method/class for int, string, double, etc., you use a type parameter (T)
+so the same implementation can handle any type safely while still being type-safe at compile time.
+=============================================================================================================================
+3- What we mean by hierarchy design in real business ?
+
+Hierarchy design in business means structuring classes (or entities) in levels of inheritance
+that reflect real-world relationships.
+
+Base classes represent general concepts (e.g., Employee).
+Derived classes represent more specific roles (e.g., Manager, Engineer).
+
+This hierarchy makes systems easier to extend, maintain, and understand, because they model real-world roles
+and responsibilities.
