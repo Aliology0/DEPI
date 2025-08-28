@@ -1,0 +1,21 @@
+Parallel Programming vs. Concurrency
+
+Parallel programming splits tasks into sub-tasks that run simultaneously on multiple CPU cores.
+Concurrency allows multiple tasks to be in progress during overlapping time periods, but not necessarily executing at the same instant.
+Concurrency is about handling many things at once, while parallelism is about doing many things at once.
+================================================================================================================================================
+Unit Testing & Test-Driven Development (TDD)
+
+Unit testing verifies small, isolated parts of code to ensure they work correctly.
+It helps detect regressions early and serves as documentation for code behavior.
+
+TDD means writing a failing test first, then writing code to pass it, and finally refactoring.
+This process improves design, keeps code decoupled, and increases reliability.
+================================================================================================================================================
+Asynchronous Programming with async and await
+
+The {async} and {await} keywords simplify asynchronous programming in C#.
+They let you write code that looks sequential but runs asynchronously.
+This keeps applications responsive and prevents blocking during long-running or I/O-bound operations.
+Async/await makes code more readable and easier to maintain compared to callbacks.
+================================================================================================================================================

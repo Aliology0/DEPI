@@ -1,0 +1,32 @@
+1) Enum
+
+Constraint: where T : Enum
+
+This constraint means that the type parameter T must be an Enum.
+It was introduced in C# 7.3 to provide strong type-safety instead of relying on reflection or unsafe casting.
+This ensures that any generic method or class works only with enumeration values.
+Use case: for example, creating a generic method that retrieves all possible values of any Enum type (like Status or Roles) using Enum.GetValues<T>().
+This makes the method reusable without writing multiple overloads for different enums.
+============================================================================================================================
+2) Constructor >>> Self >> one use case
+
+Constraint: where T : new()
+
+This constraint means that the type parameter T must have a public parameterless constructor.
+It is useful because it allows you to instantiate objects of type T inside a generic method or class.
+Use case: for example, in a generic Repository class, you might want to create a new instance of T using new T() to return an empty object when no record is found in the database.
+This makes generic repositories and factories more flexible and consistent.
+============================================================================================================================
+3) Approach code performance >> Alternative Approach >> int count = str.Count(char.IsUpper);
+
+The manual loop approach using foreach is slightly more performant since it avoids the overhead of LINQ and directly iterates through the string characters, making it ideal for performance-critical scenarios.
+On the other hand, the LINQ approach str.Count(char.IsUpper) offers more concise and readable code, but it introduces some overhead due to deferred execution and lambda invocation.
+In practice, the performance difference is negligible for small to medium strings, so the choice often comes down to readability vs. raw speed.
+============================================================================================================================
+4) what is Asynchronous programming
+
+Asynchronous programming is a programming model where tasks can run independently of the main execution thread, 
+allowing the program to continue executing other operations without waiting for the task to finish.  
+In C#, this is often implemented using {async} and {await} keywords. The main benefit is improved responsiveness
+and efficiency, especially in I/O-bound or long-running operations like file access, database queries,or API calls.
+============================================================================================================================
