@@ -1,0 +1,100 @@
+1) EF Vs ADO as performance >> edge?!
+
+EF is an ORM that maps database tables to objects using LINQ.
+It improves development speed, maintainability, and readability.
+
+ADO.NET gives direct low-level access with SqlConnection, SqlCommand, DataReader.
+ADO.NET is faster and uses fewer resources since it avoids abstraction overhead.
+
+EF is better for productivity, but ADO.NET is better for maximum performance.
+=============================================================================================================================
+2) why the default behaviour new array with capacity of 4 
+
+When initialized, a List<T> without capacity starts with 4 elements.
+This avoids wasting memory while still handling small collections efficiently.
+Capacity doubles each time it overflows: 4 → 8 → 16 → 32 …
+This guarantees amortized O(1) insertions.
+
+Choosing 4 is a trade-off between memory usage and performance.
+=============================================================================================================================
+3) built in functions in array 
+
+Sort() → sorts elements in ascending order.
+
+Reverse() → reverses array elements.
+
+IndexOf() / LastIndexOf() → finds the index of a value.
+
+Copy() / Clone() → copies array elements.
+
+Clear() → resets elements to default.
+
+
+Arrays also expose Length and Rank for size and dimensions.
+Unlike List<T>, arrays have a fixed size.
+=============================================================================================================================
+4) dynamic keyword >> web 
+
+dynamic defers type checking until runtime.
+Useful when types are not known at compile time (web APIs).
+
+
+Allows flexible coding but loses IntelliSense and compile-time safety.
+Incorrect calls lead to runtime exceptions.
+=============================================================================================================================
+5) When does the compiler create and delete the anonymous type 
+
+Created with new { Property = value }.
+Compiler generates an immutable class with read-only properties.
+Equality is based on property values, not references.
+Anonymous types only exist within the scope where they’re used.
+Compiler reuses definitions if properties and types match.
+They are garbage collected when no longer referenced.
+=============================================================================================================================
+6) Extension method for int and long
+
+Extension methods let you add new methods to existing types.
+Defined in a static class with this keyword before parameter.
+
+Example:
+
+public static bool IsEven(this int n) => n % 2 == 0;
+
+
+Usage: 5.IsEven();
+
+
+Useful for domain-specific methods like ToKilobytes() for long.
+Improves code readability without modifying built-in types.
+=============================================================================================================================
+7) Yielding
+
+yield return produces elements one at a time in an iterator method.
+Compiler generates a hidden state machine to manage iteration.
+
+Execution is lazy: items are generated when requested.
+Saves memory because no full collection is stored.
+Supports infinite sequences and simplifies custom IEnumerable<T>.
+
+Example:
+
+public static IEnumerable<int> Evens(int max)
+{
+    for (int i = 0; i <= max; i++)
+        if (i % 2 == 0) 
+	    yield return i;
+}
+=============================================================================================================================
+8) Lazy Loading
+
+Lazy Loading delays object creation until it is first used.
+In C#, implemented with Lazy<T>.
+
+Lazy<MyClass> obj = new Lazy<MyClass>(() => new MyClass());
+
+
+obj.Value creates the instance on demand.
+
+Improves startup performance by skipping unused objects.
+In EF, lazy loading defers fetching related entities until accessed.
+=============================================================================================================================
