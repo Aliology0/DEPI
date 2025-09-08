@@ -1,0 +1,7 @@
+1) Up to new Change Vs Up to previous Change
+
+In Entity Framework Core, the best practice is to always create a new migration for any schema change,
+even if you later revert it. For example, renaming a property from Name to EmpName and then back to Name
+should result in two separate migrations. This preserves a clear history of database changes, avoids conflicts
+with existing databases, and ensures consistency in team or production environments. Editing old migrations is
+discouraged, as it can break synchronization and reduce maintainability.
