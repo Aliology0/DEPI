@@ -1,0 +1,53 @@
+1) soft delete
+
+Soft delete means instead of removing data from the database, a flag
+(like IsDeleted = true) is used to mark it as deleted. This keeps
+historical records and avoids data loss, while queries are filtered to
+exclude "deleted" rows.
+=========================================================================================
+2) Restrict Vs No Action
+
+Both are delete behaviors. Restrict prevents deleting the
+parent if related children exist. No Action defers the check until the
+database enforces constraints, but often works the same as Restrict.
+=========================================================================================
+3) Clustered Index for composite PK Vs Column Primary Key
+
+A clustered index defines how data is stored on disk. A composite PK
+(clustered on multiple columns) improves queries using those combined
+keys. A single-column PK is simpler and faster for lookups by that one
+field, but less flexible for multi-column queries.
+=========================================================================================
+4) Lazy Loading Vs Eager Loading
+
+Lazy loading fetches related data only when accessed, which saves memory
+but may cause many small queries. Eager loading retrieves related data
+up front using Include(), which avoids multiple round-trips but loads
+more data at once.
+=========================================================================================
+5) TPC, TPH, TPCC
+
+TPH (Table Per Hierarchy) means all classes in the inheritance tree
+share a single table. A discriminator column identifies the type of
+each row. It is efficient but may store many unused NULL columns.
+
+TPC (Table Per Concrete Type) means each non-abstract class has its
+own table with all its properties. There is no base table, so queries
+may be simpler, but data duplication happens for shared properties.
+
+TPCC (Table Per Class) means each class has its own table,
+and subclasses reference the base table with a foreign key.
+It keeps data normalized, but queries require joins, which may reduce
+performance when inheritance trees are deep.
+
+TPH = fast, compact, but wastes space with NULLs.
+TPC = avoids NULLs, but duplicates columns.
+TPCC = normalized, but may be slower due to joins.
+=========================================================================================
+6) Map Relationship using FluentAPI : one To many >> one To one
+
+With FluentAPI, relationships can be configured precisely. For a
+one-to-many, HasMany().WithOne() is used. For one-to-one,
+HasOne().WithOne() is applied, often with HasForeignKey to point to
+the dependent entity. This makes mappings explicit and clear.
+=========================================================================================
