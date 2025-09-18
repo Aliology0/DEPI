@@ -1,0 +1,65 @@
+1) Clean URL
+
+A clean URL is a user-friendly, readable web address
+that avoids unnecessary query strings, numbers, or
+symbols. Instead of showing technical details like
+/products?id=123, a clean URL would look like
+/products/electronics/laptops. Clean URLs 
+make links easier to share,and create
+a better UX. In ASP.NET MVC, clean URLs
+are achieved through routing, which maps readable
+URL patterns to specific controllers and actions.
+=============================================================================
+2) Builder Design Pattern
+
+The builder design pattern is a creational pattern
+that helps construct complex objects step by step.
+It is useful when an object has many optional fields
+or needs a clear separation between construction and
+representation. Instead of passing everything in one
+huge constructor, the builder allows flexibility by
+building parts gradually. This makes code easier to
+read, reduces errors, and supports different product
+variations with the same construction process.
+
+(More details in Task.txt)
+=============================================================================
+3) Controller Factory
+
+In ASP.NET MVC, the controller factory is the system
+responsible for creating controller objects whenever
+a request is received. The factory looks at the URL,
+figures out which controller to use, and then builds
+an instance of that controller. By default, MVC uses
+a built-in controller factory, but developers can
+create custom ones to integrate dependency injection.
+This gives full control over how controllers are created
+and managed in the application.
+=============================================================================
+4) builder.Services.AddControllersWithViews();
+
+In ASP.NET Core, this line is added inside the
+Program.cs file to configure services in the
+application’s dependency injection container.
+It tells the framework to enable MVC controllers
+along with Razor views, so the app can respond
+to requests using both controllers and HTML views.
+Without this line, the app would not know how to
+render Razor .cshtml files or handle MVC routes.
+It is one of the most common service registrations
+for web apps that use the full MVC pattern.
+============================================================================
+5) Dependency injection
+
+Dependency Injection is a design pattern where a
+class receives the objects it depends on, instead
+of creating them inside itself. This promotes
+loose coupling, easier unit testing, and better
+code maintenance. In ASP.NET Core, DI is built-in,
+and services are registered in Program.cs using
+builder.Services.AddScoped(), AddTransient(),
+or AddSingleton(). The framework then supplies
+the required dependencies automatically whenever
+a controller or service is created. This makes
+applications more flexible and testable.
+============================================================================

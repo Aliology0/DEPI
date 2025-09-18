@@ -1,0 +1,218 @@
+Why we use IActionResult not ActionResult?
+
+ActionResult is a class that already implements IActionResult. It can return many types of responses like ViewResult or JsonResult.
+
+IActionResult is an interface that many return types implement (including ActionResult).
+
+Why we prefer IActionResult?
+
+Flexibility: You can return different types of responses.
+Abstraction: Using the interface is cleaner and follows SOLID principles (Dependency Inversion).
+Unit Testing: Easier to mock/test when returning IActionResult.
+
+Example:
+public IActionResult GetStudent(int id)
+{
+    if (id <= 0)
+        return BadRequest("Invalid ID"); // returns BadRequestResult
+
+    var student = new { Id = id, Name = "Ali" };
+    return Ok(student); // returns JsonResult
+}
+If we used ActionResult, this method is still fine but IActionResult communicates “I can return any result type”, not just one.
+==================================================================================================================================================================
+What does HttpContext request and response consist of?
+
+Request (client to server):
+
+HttpContext.Request.Method → GET, POST, PUT, DELETE
+HttpContext.Request.Path → /students/5
+HttpContext.Request.Query → ?id=5&name=Ali
+HttpContext.Request.Headers → cookies, tokens, user-agent
+HttpContext.Request.Body → raw request body (JSON, form data)
+
+Response (server to client):
+
+HttpContext.Response.StatusCode → 200, 404, 500
+HttpContext.Response.Headers → Content-Type, Set-Cookie
+HttpContext.Response.Body → HTML page, JSON API data, file download
+
+Request carries WHAT client wants (method, data, headers).
+Response carries server’s ANSWER (status, content, headers).
+==================================================================================================================================================================
+What’s the difference between HTTPS and HTTP?
+
+HTTP (HyperText Transfer Protocol):
+
+- Communication is not encrypted.
+- Anyone sniffing the network can read passwords, data.s
+- Used for simple public websites.
+
+HTTPS (HTTP Secure):
+
+- Communication is encrypted.
+- Protects from eavesdropping and data tampering.
+- Required for banking, e-commerce, login systems.
+
+HTTP: http://example.com/login → unsafe (credentials can be stolen).
+HTTPS: https://example.com/login → encrypted and secure.
+==================================================================================================================================================================
+Segments and Fragments in URL
+
+Segments:
+Segments refer to the hierarchical parts of a URL's path, typically delimited by forward slashes (/).
+They represent the structure of the resource on the server.
+
+Example: 
+In the URL https://www.apple.com/shop/buy-mac/macbook-pro, the segments are products, category, and item123.
+
+Function:
+Segments are processed by the web server to locate the specific resource or content being requested.
+They form the "absolute path" of the URI, excluding the host, port, query string, and fragment.
+
+Fragments:
+A fragment, also known as a "fragment identifier," is a part of the URL that points to a specific section or element within a web page or document.
+It is introduced by a hash symbol (#). 
+Example:
+In the URL https://www.shopify.com/enterprise#contact-sales, #installation is the fragment.
+Function:
+Fragments are processed by the client (e.g., the web browser) after the resource is retrieved.
+They are not typically sent to the server in the initial HTTP request. The browser uses the fragment to scroll to a specific
+HTML element with a matching ID, play a video from a particular timestamp, or navigate to a designated section within the loaded content. 
+==================================================================================================================================================================
+Builder and Dependency Injection
+
+Builder Pattern
+
+Used when an object is complex and needs step-by-step creation.
+
+Example: Building a Car.
+public class CarBuilder
+{
+    public void BuildWheels() { ... }
+    public void BuildEngine() { ... }
+    public void BuildFuelTank() { ... }
+}
+
+Dependency Injection (DI)
+
+Instead of creating dependencies inside a class, they are injected from outside.
+Promotes loose coupling and testability.
+
+Example:
+public interface IEngine { void Start(); }
+public class ElectricEngine : IEngine { public void Start() => Console.WriteLine("Electric engine start"); }
+
+public class Car
+{
+    private readonly IEngine _engine;
+    public Car(IEngine engine) { _engine = engine; } // Dependency injected
+}
+Now, you can give Car either a PetrolEngine or an ElectricEngine without changing Car’s code.
+==================================================================================================================================================================
+Difference between Razor Pages and MVC
+
+Razor Pages
+
+- Page-based programming model (like WebForms).
+- Each .cshtml page has its own code-behind file.
+- Simpler for small apps.
+
+MVC
+
+- Uses Models, Views, Controllers.
+- Controller handles requests, Model stores data, View shows UI.
+- Better for large apps with multiple teams.
+
+Business Cases:
+
+Razor Pages → Personal website, Blog, Portfolio.
+MVC → E-commerce system, Banking application, HR system.
+==================================================================================================================================================================
+Minification, Web Bundle, Webpack, Lazy Loading
+
+Minification:
+
+- Removes spaces
+- comments from JS/CSS → smaller file size.
+Example: function test() { return 1; } → function test(){return 1}
+
+Bundling:
+
+- Combines multiple JS or CSS files into one → fewer network requests.
+- Example: Instead of loading 5 scripts separately, combine into bundle.js.
+
+Webpack:
+
+- Modern tool for bundling, optimizing, handling assets (images, fonts, etc).
+- Supports ES6 modules, transpilation.
+
+Lazy Loading:
+
+- Load resources only when needed.
+- Example: Images load when you scroll to them → faster page load.
+
+Role in performance:
+
+- Reduce network requests
+- Reduce file size
+- Faster page loading
+- Better UX
+==================================================================================================================================================================
+What is Content-Type in a Response?
+
+When a server sends back a response to the client (browser, mobile app, or another server), it includes headers that describe the data.
+
+Common Content-Types
+
+1.HTML
+Used for normal web pages.
+Browser renders it as a webpage.
+
+2.JSON
+Used for REST APIs.
+Clients (JS, mobile apps, Postman) parse it as JSON.
+
+3.Plain Text
+Just raw text, no formatting.
+
+4.XML
+Used in older APIs and SOAP services.
+
+5.Files
+Images → image/png, image/jpeg
+PDFs → application/pdf
+Excel → application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+
+Where do we use Content-Type?
+
+1.In MVC Controllers
+When returning data, we explicitly set Content-Type.
+
+public IActionResult GetData()
+{
+    var student = new { Id = 1, Name = "Ali" };
+    return Json(student); // sets Content-Type to JSON
+}
+
+2.In API Development
+Without correct Content-Type, clients may misinterpret data.
+Example: Returning JSON but setting text/html → the client might fail to parse it.
+
+3.In Browser Behavior
+If server sends Content-Type: text/html, browser tries to render it.
+If server sends Content-Type: application/json, browser shows raw JSON or JS app consumes it.
+
+Why is Content-Type important?
+
+1) Correct Data Handling
+- Ensures the client interprets response correctly.
+- Example: JSON API won’t work if sent as text/plain.
+
+2) Security
+- Prevents certain attacks.
+- Example: Sending a file as text/html instead of application/pdf might allow attacks.
+
+3) Cross-system Communication
+- APIs and microservices often exchange data.
+- Content-Type ensures both sides agree on the data format.
