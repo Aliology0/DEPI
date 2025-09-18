@@ -1,0 +1,15 @@
+D:\Courses\DEPI\EF Core\C# Mini-Project\Exam System\bin\Debug\net5.0\Exam System.exe
+D:\Courses\DEPI\EF Core\C# Mini-Project\Exam System\bin\Debug\net5.0\Exam System.deps.json
+D:\Courses\DEPI\EF Core\C# Mini-Project\Exam System\bin\Debug\net5.0\Exam System.runtimeconfig.json
+D:\Courses\DEPI\EF Core\C# Mini-Project\Exam System\bin\Debug\net5.0\Exam System.runtimeconfig.dev.json
+D:\Courses\DEPI\EF Core\C# Mini-Project\Exam System\bin\Debug\net5.0\Exam System.dll
+D:\Courses\DEPI\EF Core\C# Mini-Project\Exam System\bin\Debug\net5.0\Exam System.pdb
+D:\Courses\DEPI\EF Core\C# Mini-Project\Exam System\obj\Debug\net5.0\Exam System.GeneratedMSBuildEditorConfig.editorconfig
+D:\Courses\DEPI\EF Core\C# Mini-Project\Exam System\obj\Debug\net5.0\Exam System.AssemblyInfoInputs.cache
+D:\Courses\DEPI\EF Core\C# Mini-Project\Exam System\obj\Debug\net5.0\Exam System.AssemblyInfo.cs
+D:\Courses\DEPI\EF Core\C# Mini-Project\Exam System\obj\Debug\net5.0\Exam System.csproj.CoreCompileInputs.cache
+D:\Courses\DEPI\EF Core\C# Mini-Project\Exam System\obj\Debug\net5.0\Exam System.dll
+D:\Courses\DEPI\EF Core\C# Mini-Project\Exam System\obj\Debug\net5.0\refint\Exam System.dll
+D:\Courses\DEPI\EF Core\C# Mini-Project\Exam System\obj\Debug\net5.0\Exam System.pdb
+D:\Courses\DEPI\EF Core\C# Mini-Project\Exam System\obj\Debug\net5.0\Exam System.genruntimeconfig.cache
+D:\Courses\DEPI\EF Core\C# Mini-Project\Exam System\obj\Debug\net5.0\ref\Exam System.dll
