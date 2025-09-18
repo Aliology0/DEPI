@@ -1,0 +1,60 @@
+﻿@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Laptops Page";
+
+    decimal AsusPrice = 45000;
+    decimal DellPrice = 10000;
+    decimal HpPrice = 2000;
+    decimal LenovoPrice = 30000;
+}
+
+<h1>
+    Ali Emad
+    <br />
+    Group 1
+</h1>
+
+<h2>Available Products</h2>
+
+<ul>
+    <li>Asus Laptops : @AsusPrice EGP</li>
+    <li>Dell Laptops : @DellPrice EGP</li>
+    <li>HP Laptops : @HpPrice EGP</li>
+    <li>Lenovo Laptops : @LenovoPrice EGP</li>
+</ul>
+
+@if (AsusPrice > LenovoPrice)
+{
+    <h2 class="comparison">Asus is more expensive than Lenovo</h2>
+}
+else
+{
+    <h2 class="comparison">Lenovo is more expensive than Asus</h2>
+}
+
+<style>
+
+    h1 {
+        text-align: center;
+        color: blue;
+    }
+
+    .comparison {
+        color: lightgreen;
+        font-weight: bold
+    }
+
+    h2 {
+        color: red;
+    }
+
+    ul {
+        list-style-type: square;
+        padding-left: 20px;
+    }
+
+    li {
+        margin-bottom: 8px;
+        font-size: 18px;
+    }
+</style>

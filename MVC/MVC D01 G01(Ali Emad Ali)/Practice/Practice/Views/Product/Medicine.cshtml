@@ -1,0 +1,60 @@
+﻿@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Medicine Page";
+
+    decimal Medicine1 = 45;
+    decimal Medicine2 = 10;
+    decimal Medicine3 = 20;
+    decimal Medicine4 = 30;
+}
+
+<h1>
+    Ali Emad
+    <br />
+    Group 1
+</h1>
+
+<h2>Available Products</h2>
+
+<ul>
+    <li>Medicine1 : @Medicine1 EGP</li>
+    <li>Medicine2 : @Medicine2 EGP</li>
+    <li>Medicine3 : @Medicine3 EGP</li>
+    <li>Medicine4 : @Medicine4 EGP</li>
+</ul>
+
+@if (Medicine1 > Medicine2)
+{
+    <h2 class="comparison">Medicine1 is more expensive than Medicine2</h2>
+}
+else
+{
+    <h2 class="comparison">Medicine2 is more expensive than Medicine1</h2>
+}
+
+<style>
+
+    h1 {
+        text-align: center;
+        color: blue;
+    }
+
+    .comparison {
+        color: lightgreen;
+        font-weight: bold
+    }
+
+    h2 {
+        color: red;
+    }
+
+    ul {
+        list-style-type: square;
+        padding-left: 20px;
+    }
+
+    li {
+        margin-bottom: 8px;
+        font-size: 18px;
+    }
+</style>
