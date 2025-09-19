@@ -1,3 +1,4 @@
 - Sorry for not making an exam list and navigate through them (no time)
 - Sorry for not doing Save to file and load from functions ( the process was too complicated for me to learn right now)
 - I tried to handle exceptions as best as I could
+- There was a UML for this project but I accidently deleted it.
