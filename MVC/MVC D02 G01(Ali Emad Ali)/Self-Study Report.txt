@@ -1,0 +1,39 @@
+1) MultipleActivePageResultSet
+
+Multiple Active Result Sets is a SQL Server feature that allows more than
+one query to be executed on the same database connection at the same time. This
+helps developers work with multiple result sets without needing to open new
+connections, which makes applications more efficient when running parallel
+operations.
+==========================================================================================================================
+2) EnableSensitiveDataLogging()
+
+EnableSensitiveDataLogging() is a configuration option in Entity Framework Core
+that provides detailed logs including the actual parameter values in queries. It
+is very useful during development and debugging because it helps identify issues
+more easily, but it should not be used in production environments due to
+security risks of exposing sensitive data.
+==========================================================================================================================
+3) Seeding
+
+Seeding is the process of inserting default or initial data into a database
+automatically when migrations are applied. It ensures that certain required
+records, such as admin accounts or lookup values, are always available in the
+database after setup. This makes testing and starting a project more consistent.
+==========================================================================================================================
+4) activepageresultsets
+
+ActiveResultSets is an option that can be enabled in the SQL Server connection
+string to support MARS functionality. By adding MultipleActiveResultSets=True,
+the database can process multiple queries over the same connection, allowing
+better performance for applications that need to fetch or process several
+results at once.
+==========================================================================================================================
+5) .Log(Log Level) >> Output : Debug Window
+
+Entity Framework Core supports logging of database operations, and developers
+can configure the log level to control the amount of information displayed. By
+using .Log(LogLevel) and setting the output, developers can monitor queries,
+errors, and warnings. In Visual Studio, these logs appear in the Output → Debug
+window, which helps in diagnosing and optimizing the application.
+==========================================================================================================================
