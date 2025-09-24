@@ -1,10 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Courses\\DEPI\\MVC\\Day03\\MVC D03 G01(Ali Emad Ali)\\Company_System\\",
+  "WorkspaceRootPath": "D:\\Courses\\Repos\\DEPI\\MVC\\MVC D03 G01(Ali Emad Ali)\\Company_System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3669B843-DCB6-4BAE-88AE-C074690E46B6}|Company_System\\Company_System.csproj|d:\\courses\\depi\\mvc\\day03\\mvc d03 g01(ali emad ali)\\company_system\\company_system\\company_system.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{3669B843-DCB6-4BAE-88AE-C074690E46B6}|Company_System\\Company_System.csproj|solutionrelative:company_system\\company_system.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{3669B843-DCB6-4BAE-88AE-C074690E46B6}|Company_System\\Company_System.csproj|d:\\courses\\repos\\depi\\mvc\\mvc d03 g01(ali emad ali)\\company_system\\company_system\\views\\department\\showall.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3669B843-DCB6-4BAE-88AE-C074690E46B6}|Company_System\\Company_System.csproj|solutionrelative:company_system\\views\\department\\showall.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3669B843-DCB6-4BAE-88AE-C074690E46B6}|Company_System\\Company_System.csproj|d:\\courses\\repos\\depi\\mvc\\mvc d03 g01(ali emad ali)\\company_system\\company_system\\models\\departmentbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3669B843-DCB6-4BAE-88AE-C074690E46B6}|Company_System\\Company_System.csproj|solutionrelative:company_system\\models\\departmentbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3669B843-DCB6-4BAE-88AE-C074690E46B6}|Company_System\\Company_System.csproj|d:\\courses\\repos\\depi\\mvc\\mvc d03 g01(ali emad ali)\\company_system\\company_system\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3669B843-DCB6-4BAE-88AE-C074690E46B6}|Company_System\\Company_System.csproj|solutionrelative:company_system\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3669B843-DCB6-4BAE-88AE-C074690E46B6}|Company_System\\Company_System.csproj|d:\\courses\\repos\\depi\\mvc\\mvc d03 g01(ali emad ali)\\company_system\\company_system\\views\\department\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3669B843-DCB6-4BAE-88AE-C074690E46B6}|Company_System\\Company_System.csproj|solutionrelative:company_system\\views\\department\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,15 +34,54 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DepartmentBL.cs",
+              "DocumentMoniker": "D:\\Courses\\Repos\\DEPI\\MVC\\MVC D03 G01(Ali Emad Ali)\\Company_System\\Company_System\\Models\\DepartmentBL.cs",
+              "RelativeDocumentMoniker": "Company_System\\Models\\DepartmentBL.cs",
+              "ToolTip": "D:\\Courses\\Repos\\DEPI\\MVC\\MVC D03 G01(Ali Emad Ali)\\Company_System\\Company_System\\Models\\DepartmentBL.cs",
+              "RelativeToolTip": "Company_System\\Models\\DepartmentBL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T10:22:51.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Company_System",
-              "DocumentMoniker": "D:\\Courses\\DEPI\\MVC\\Day03\\MVC D03 G01(Ali Emad Ali)\\Company_System\\Company_System\\Company_System.csproj",
-              "RelativeDocumentMoniker": "Company_System\\Company_System.csproj",
-              "ToolTip": "D:\\Courses\\DEPI\\MVC\\Day03\\MVC D03 G01(Ali Emad Ali)\\Company_System\\Company_System\\Company_System.csproj",
-              "RelativeToolTip": "Company_System\\Company_System.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-09-24T07:37:51.813Z",
+              "Title": "ShowAll.cshtml",
+              "DocumentMoniker": "D:\\Courses\\Repos\\DEPI\\MVC\\MVC D03 G01(Ali Emad Ali)\\Company_System\\Company_System\\Views\\Department\\ShowAll.cshtml",
+              "RelativeDocumentMoniker": "Company_System\\Views\\Department\\ShowAll.cshtml",
+              "ToolTip": "D:\\Courses\\Repos\\DEPI\\MVC\\MVC D03 G01(Ali Emad Ali)\\Company_System\\Company_System\\Views\\Department\\ShowAll.cshtml",
+              "RelativeToolTip": "Company_System\\Views\\Department\\ShowAll.cshtml",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAACcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-24T09:45:59.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Add.cshtml",
+              "DocumentMoniker": "D:\\Courses\\Repos\\DEPI\\MVC\\MVC D03 G01(Ali Emad Ali)\\Company_System\\Company_System\\Views\\Department\\Add.cshtml",
+              "RelativeDocumentMoniker": "Company_System\\Views\\Department\\Add.cshtml",
+              "ToolTip": "D:\\Courses\\Repos\\DEPI\\MVC\\MVC D03 G01(Ali Emad Ali)\\Company_System\\Company_System\\Views\\Department\\Add.cshtml",
+              "RelativeToolTip": "Company_System\\Views\\Department\\Add.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-24T09:35:59.828Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DepartmentController.cs",
+              "DocumentMoniker": "D:\\Courses\\Repos\\DEPI\\MVC\\MVC D03 G01(Ali Emad Ali)\\Company_System\\Company_System\\Controllers\\DepartmentController.cs",
+              "RelativeDocumentMoniker": "Company_System\\Controllers\\DepartmentController.cs",
+              "ToolTip": "D:\\Courses\\Repos\\DEPI\\MVC\\MVC D03 G01(Ali Emad Ali)\\Company_System\\Company_System\\Controllers\\DepartmentController.cs",
+              "RelativeToolTip": "Company_System\\Controllers\\DepartmentController.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAAAFwAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T09:01:38.893Z",
               "EditorCaption": ""
             }
           ]

@@ -10,7 +10,8 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<CompanyDbContext>(options =>
     options.UseSqlServer("Server=.\\SQLEXPRESS;Database=CompanyDB;Trusted_Connection=True;TrustServerCertificate=True;"));
 
-
+builder.Services.AddScoped<DepartmentBL>();
+builder.Services.AddScoped<StudentBL>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

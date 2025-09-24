@@ -9,49 +9,49 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Practice
 build_property.RootNamespace = Practice
-build_property.ProjectDir = D:\Courses\DEPI\MVC\Day01\MVC D01 G01(Ali Emad Ali)\Practice\Practice\
+build_property.ProjectDir = D:\Courses\Repos\DEPI\MVC\MVC D01 G01(Ali Emad Ali)\Practice\Practice\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Courses\DEPI\MVC\Day01\MVC D01 G01(Ali Emad Ali)\Practice\Practice
+build_property.MSBuildProjectDirectory = D:\Courses\Repos\DEPI\MVC\MVC D01 G01(Ali Emad Ali)\Practice\Practice
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[D:/Courses/DEPI/MVC/Day01/MVC D01 G01(Ali Emad Ali)/Practice/Practice/Views/Home/Index.cshtml]
+[D:/Courses/Repos/DEPI/MVC/MVC D01 G01(Ali Emad Ali)/Practice/Practice/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Courses/DEPI/MVC/Day01/MVC D01 G01(Ali Emad Ali)/Practice/Practice/Views/Home/Privacy.cshtml]
+[D:/Courses/Repos/DEPI/MVC/MVC D01 G01(Ali Emad Ali)/Practice/Practice/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Courses/DEPI/MVC/Day01/MVC D01 G01(Ali Emad Ali)/Practice/Practice/Views/Product/Laptops.cshtml]
+[D:/Courses/Repos/DEPI/MVC/MVC D01 G01(Ali Emad Ali)/Practice/Practice/Views/Product/Laptops.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxMYXB0b3BzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Courses/DEPI/MVC/Day01/MVC D01 G01(Ali Emad Ali)/Practice/Practice/Views/Product/Medicine.cshtml]
+[D:/Courses/Repos/DEPI/MVC/MVC D01 G01(Ali Emad Ali)/Practice/Practice/Views/Product/Medicine.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxNZWRpY2luZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Courses/DEPI/MVC/Day01/MVC D01 G01(Ali Emad Ali)/Practice/Practice/Views/Shared/Error.cshtml]
+[D:/Courses/Repos/DEPI/MVC/MVC D01 G01(Ali Emad Ali)/Practice/Practice/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Courses/DEPI/MVC/Day01/MVC D01 G01(Ali Emad Ali)/Practice/Practice/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Courses/Repos/DEPI/MVC/MVC D01 G01(Ali Emad Ali)/Practice/Practice/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Courses/DEPI/MVC/Day01/MVC D01 G01(Ali Emad Ali)/Practice/Practice/Views/_ViewImports.cshtml]
+[D:/Courses/Repos/DEPI/MVC/MVC D01 G01(Ali Emad Ali)/Practice/Practice/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Courses/DEPI/MVC/Day01/MVC D01 G01(Ali Emad Ali)/Practice/Practice/Views/_ViewStart.cshtml]
+[D:/Courses/Repos/DEPI/MVC/MVC D01 G01(Ali Emad Ali)/Practice/Practice/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Courses/DEPI/MVC/Day01/MVC D01 G01(Ali Emad Ali)/Practice/Practice/Views/Shared/_Layout.cshtml]
+[D:/Courses/Repos/DEPI/MVC/MVC D01 G01(Ali Emad Ali)/Practice/Practice/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-a4lxi8xlsj

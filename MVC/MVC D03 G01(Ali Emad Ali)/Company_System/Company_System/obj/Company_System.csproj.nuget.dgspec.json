@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Courses\\DEPI\\MVC\\Day03\\MVC D03 G01(Ali Emad Ali)\\Company_System\\Company_System\\Company_System.csproj": {}
+    "D:\\Courses\\Repos\\DEPI\\MVC\\MVC D03 G01(Ali Emad Ali)\\Company_System\\Company_System\\Company_System.csproj": {}
   },
   "projects": {
-    "D:\\Courses\\DEPI\\MVC\\Day03\\MVC D03 G01(Ali Emad Ali)\\Company_System\\Company_System\\Company_System.csproj": {
+    "D:\\Courses\\Repos\\DEPI\\MVC\\MVC D03 G01(Ali Emad Ali)\\Company_System\\Company_System\\Company_System.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Courses\\DEPI\\MVC\\Day03\\MVC D03 G01(Ali Emad Ali)\\Company_System\\Company_System\\Company_System.csproj",
+        "projectUniqueName": "D:\\Courses\\Repos\\DEPI\\MVC\\MVC D03 G01(Ali Emad Ali)\\Company_System\\Company_System\\Company_System.csproj",
         "projectName": "Company_System",
-        "projectPath": "D:\\Courses\\DEPI\\MVC\\Day03\\MVC D03 G01(Ali Emad Ali)\\Company_System\\Company_System\\Company_System.csproj",
+        "projectPath": "D:\\Courses\\Repos\\DEPI\\MVC\\MVC D03 G01(Ali Emad Ali)\\Company_System\\Company_System\\Company_System.csproj",
         "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-        "outputPath": "D:\\Courses\\DEPI\\MVC\\Day03\\MVC D03 G01(Ali Emad Ali)\\Company_System\\Company_System\\obj\\",
+        "outputPath": "D:\\Courses\\Repos\\DEPI\\MVC\\MVC D03 G01(Ali Emad Ali)\\Company_System\\Company_System\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

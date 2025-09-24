@@ -19,6 +19,7 @@ namespace Company_System.Data
         }
 
         public CompanyDbContext(DbContextOptions<CompanyDbContext> options) : base(options) { }
+        public CompanyDbContext() : base() { }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

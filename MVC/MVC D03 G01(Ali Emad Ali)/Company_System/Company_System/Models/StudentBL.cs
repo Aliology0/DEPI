@@ -26,5 +26,16 @@ namespace Company_System.Models
                           .Include(s => s.Department)
                           .ToList();
         }
+
+        public void AddStudent(Student student)
+        {
+            context.Students.Add(student);
+            context.SaveChanges();
+        }
+        public void DeleteStudent(Student student)
+        {
+            context.Students.Remove(student);
+            context.SaveChanges();
+        }
     }
 }

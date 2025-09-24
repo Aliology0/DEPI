@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "A2PBI2iH+vk=",
+  "dgSpecHash": "V7feRRuxtiI=",
   "success": true,
-  "projectFilePath": "D:\\Courses\\DEPI\\MVC\\Day03\\MVC D03 G01(Ali Emad Ali)\\Company_System\\Company_System\\Company_System.csproj",
+  "projectFilePath": "D:\\Courses\\Repos\\DEPI\\MVC\\MVC D03 G01(Ali Emad Ali)\\Company_System\\Company_System\\Company_System.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lenovo\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
