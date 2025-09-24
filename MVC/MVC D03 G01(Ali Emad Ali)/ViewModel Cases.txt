@@ -1,0 +1,34 @@
+1) When You Need to Combine Data from Multiple Tables
+
+Example:
+You want to display a page showing Department details and Students list together.
+
+Department entity has department info.
+Student entity has student info.
+
+A ViewModel can merge them into one object (DepartmentViewModel) to send to the view.
+================================================================================================================================================
+2) When You Need to Limit or Shape Data for the View (Security Case)
+
+This is critical.
+
+If you pass the Entity Model directly to the view, it might expose sensitive properties (e.g., PasswordHash, Salary, NationalID).
+Using a ViewModel, you only include the properties you actually want the user to see or edit.
+
+Example:
+Instead of passing User entity (which has PasswordHash, IsAdmin, etc.), you create a UserProfileViewModel with just Name, Email, Age.
+This prevents overposting attacks and sensitive data leaks.
+================================================================================================================================================
+3) When You Need Extra, Computed, or UI-Specific Properties
+
+Sometimes the database model doesn’t match exactly what the UI needs.
+Example:
+
+In task case, we wanted a DepartmentViewModel that contains:
+
+DepartmentName
+List of Students above 25
+DepartmentState (Main if >50 students, Branch otherwise)
+
+These fields don’t exist directly in the DB, so you create a ViewModel tailored to the view.
+================================================================================================================================================
