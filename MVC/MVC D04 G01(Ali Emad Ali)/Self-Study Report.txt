@@ -1,0 +1,29 @@
+1)AsNotracking
+
+In Entity Framework Core, the AsNoTracking method is used 
+when querying data that will only be read and not updated. 
+Normally, EF Core tracks all retrieved entities to detect 
+changes and update them later. This tracking consumes memory 
+and processing power. By using AsNoTracking, you improve 
+performance and reduce overhead, especially when displaying 
+large read-only lists of data.
+====================================================================
+2)AutoMapper
+
+AutoMapper is a library in .NET that helps automatically map 
+data between objects. For example, it can copy values from a 
+Domain Model to a ViewModel without writing repetitive code. 
+This makes code cleaner, reduces human error, and speeds up 
+development. It is especially useful in MVC projects, where 
+you separate database models from presentation models.
+====================================================================
+3)Relative Path URL
+
+A relative path URL is a web address that defines the location 
+of a resource in relation to the current page’s location. 
+Unlike absolute URLs, which include the full domain name, 
+relative paths are shorter and flexible. For example, 
+"../images/photo.png" refers to a file relative to the current 
+folder. They make projects easier to maintain and portable 
+across environments.
+====================================================================

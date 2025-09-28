@@ -1,0 +1,7 @@
+What is the purpose of async/await keywords?
+
+The primary purpose of the async/await keywords is to simplify and improve the readability of asynchronous code,
+allowing it to be written in a style that resembles synchronous code, making it easier to write, understand, and debug.
+The async keyword declares an asynchronous function, which always returns a promise, while the await keyword pauses the
+execution of the async function until a promise settles, then returns its result or throws an error. 
+

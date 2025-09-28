@@ -1,4 +1,40 @@
 1) Request Header
+The request header is metadata sent along with an HTTP request.
+It includes key-value pairs such as Content-Type, Authorization,
+User-Agent, and cookies. Headers provide important context to the
+server about the client, the type of data being sent, and security
+credentials.
+=================================================================================
 2) Request Body
-3) filter
-4) status code : 405
+The request body contains the actual data being transmitted from the
+client to the server. It is typically used with POST, PUT, or
+PATCH requests to send form data, JSON objects, or file uploads.
+Unlike headers, the body carries the content itself, not just metadata.
+=================================================================================
+3) Filter
+In ASP.NET Core MVC, filters are classes that allow code to run before
+or after certain stages of the request pipeline. Examples include
+authorization filters, action filters, and exception filters. They are
+used for cross-cutting concerns like logging, validation, and security.
+
+(Linkedin Article)
+=================================================================================
+4) Status Code 405
+The HTTP status code 405 Method Not Allowed indicates that the
+server recognizes the requested URL but rejects the HTTP method used.
+For example, if a controller action only accepts POST and the client
+sends a GET, the server will return a 405 error.
+=================================================================================
+5) Eager Load
+Eager loading is a technique in Entity Framework where related data is
+retrieved from the database at the same time as the main entity. This
+is done using .Include() in LINQ queries. It reduces the number of
+database calls, which is useful when you know you’ll need the related
+data immediately. However, it may fetch more data than necessary.
+=================================================================================
+6) Lazy Load
+Lazy loading delays the loading of related data until it is explicitly
+accessed in code. With lazy loading, Entity Framework issues a new SQL
+query only when the navigation property is used. This saves memory and
+bandwidth when the related data isn’t always required, but it can cause
+the “N+1 query problem” if used carelessly.

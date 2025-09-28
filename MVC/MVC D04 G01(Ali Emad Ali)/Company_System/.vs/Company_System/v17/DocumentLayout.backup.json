@@ -1,0 +1,194 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Courses\\Repos\\DEPI\\MVC\\MVC D04 G01(Ali Emad Ali)\\Company_System\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3669B843-DCB6-4BAE-88AE-C074690E46B6}|Company_System\\Company_System.csproj|d:\\courses\\repos\\depi\\mvc\\mvc d04 g01(ali emad ali)\\company_system\\company_system\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3669B843-DCB6-4BAE-88AE-C074690E46B6}|Company_System\\Company_System.csproj|solutionrelative:company_system\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3669B843-DCB6-4BAE-88AE-C074690E46B6}|Company_System\\Company_System.csproj|d:\\courses\\repos\\depi\\mvc\\mvc d04 g01(ali emad ali)\\company_system\\company_system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3669B843-DCB6-4BAE-88AE-C074690E46B6}|Company_System\\Company_System.csproj|solutionrelative:company_system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3669B843-DCB6-4BAE-88AE-C074690E46B6}|Company_System\\Company_System.csproj|d:\\courses\\repos\\depi\\mvc\\mvc d04 g01(ali emad ali)\\company_system\\company_system\\views\\student\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3669B843-DCB6-4BAE-88AE-C074690E46B6}|Company_System\\Company_System.csproj|solutionrelative:company_system\\views\\student\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3669B843-DCB6-4BAE-88AE-C074690E46B6}|Company_System\\Company_System.csproj|d:\\courses\\repos\\depi\\mvc\\mvc d04 g01(ali emad ali)\\company_system\\company_system\\views\\department\\addstudent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3669B843-DCB6-4BAE-88AE-C074690E46B6}|Company_System\\Company_System.csproj|solutionrelative:company_system\\views\\department\\addstudent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3669B843-DCB6-4BAE-88AE-C074690E46B6}|Company_System\\Company_System.csproj|d:\\courses\\repos\\depi\\mvc\\mvc d04 g01(ali emad ali)\\company_system\\company_system\\views\\department\\showall.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3669B843-DCB6-4BAE-88AE-C074690E46B6}|Company_System\\Company_System.csproj|solutionrelative:company_system\\views\\department\\showall.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3669B843-DCB6-4BAE-88AE-C074690E46B6}|Company_System\\Company_System.csproj|d:\\courses\\repos\\depi\\mvc\\mvc d04 g01(ali emad ali)\\company_system\\company_system\\views\\student\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3669B843-DCB6-4BAE-88AE-C074690E46B6}|Company_System\\Company_System.csproj|solutionrelative:company_system\\views\\student\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3669B843-DCB6-4BAE-88AE-C074690E46B6}|Company_System\\Company_System.csproj|d:\\courses\\repos\\depi\\mvc\\mvc d04 g01(ali emad ali)\\company_system\\company_system\\views\\student\\getbyid.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3669B843-DCB6-4BAE-88AE-C074690E46B6}|Company_System\\Company_System.csproj|solutionrelative:company_system\\views\\student\\getbyid.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3669B843-DCB6-4BAE-88AE-C074690E46B6}|Company_System\\Company_System.csproj|d:\\courses\\repos\\depi\\mvc\\mvc d04 g01(ali emad ali)\\company_system\\company_system\\views\\student\\showall.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3669B843-DCB6-4BAE-88AE-C074690E46B6}|Company_System\\Company_System.csproj|solutionrelative:company_system\\views\\student\\showall.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3669B843-DCB6-4BAE-88AE-C074690E46B6}|Company_System\\Company_System.csproj|d:\\courses\\repos\\depi\\mvc\\mvc d04 g01(ali emad ali)\\company_system\\company_system\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3669B843-DCB6-4BAE-88AE-C074690E46B6}|Company_System\\Company_System.csproj|solutionrelative:company_system\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3669B843-DCB6-4BAE-88AE-C074690E46B6}|Company_System\\Company_System.csproj|d:\\courses\\repos\\depi\\mvc\\mvc d04 g01(ali emad ali)\\company_system\\company_system\\models\\studentbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3669B843-DCB6-4BAE-88AE-C074690E46B6}|Company_System\\Company_System.csproj|solutionrelative:company_system\\models\\studentbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Courses\\Repos\\DEPI\\MVC\\MVC D04 G01(Ali Emad Ali)\\Company_System\\Company_System\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Company_System\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Courses\\Repos\\DEPI\\MVC\\MVC D04 G01(Ali Emad Ali)\\Company_System\\Company_System\\Controllers\\HomeController.cs*",
+              "RelativeToolTip": "Company_System\\Controllers\\HomeController.cs*",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAABsAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-28T18:53:02.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Courses\\Repos\\DEPI\\MVC\\MVC D04 G01(Ali Emad Ali)\\Company_System\\Company_System\\Program.cs",
+              "RelativeDocumentMoniker": "Company_System\\Program.cs",
+              "ToolTip": "D:\\Courses\\Repos\\DEPI\\MVC\\MVC D04 G01(Ali Emad Ali)\\Company_System\\Company_System\\Program.cs",
+              "RelativeToolTip": "Company_System\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-28T18:52:42.236Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ShowAll.cshtml",
+              "DocumentMoniker": "D:\\Courses\\Repos\\DEPI\\MVC\\MVC D04 G01(Ali Emad Ali)\\Company_System\\Company_System\\Views\\Department\\ShowAll.cshtml",
+              "RelativeDocumentMoniker": "Company_System\\Views\\Department\\ShowAll.cshtml",
+              "ToolTip": "D:\\Courses\\Repos\\DEPI\\MVC\\MVC D04 G01(Ali Emad Ali)\\Company_System\\Company_System\\Views\\Department\\ShowAll.cshtml",
+              "RelativeToolTip": "Company_System\\Views\\Department\\ShowAll.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAB0AAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-28T18:43:46.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AddStudent.cshtml",
+              "DocumentMoniker": "D:\\Courses\\Repos\\DEPI\\MVC\\MVC D04 G01(Ali Emad Ali)\\Company_System\\Company_System\\Views\\Department\\AddStudent.cshtml",
+              "RelativeDocumentMoniker": "Company_System\\Views\\Department\\AddStudent.cshtml",
+              "ToolTip": "D:\\Courses\\Repos\\DEPI\\MVC\\MVC D04 G01(Ali Emad Ali)\\Company_System\\Company_System\\Views\\Department\\AddStudent.cshtml",
+              "RelativeToolTip": "Company_System\\Views\\Department\\AddStudent.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-28T18:43:23.824Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Courses\\Repos\\DEPI\\MVC\\MVC D04 G01(Ali Emad Ali)\\Company_System\\Company_System\\Views\\Student\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Company_System\\Views\\Student\\Edit.cshtml",
+              "ToolTip": "D:\\Courses\\Repos\\DEPI\\MVC\\MVC D04 G01(Ali Emad Ali)\\Company_System\\Company_System\\Views\\Student\\Edit.cshtml",
+              "RelativeToolTip": "Company_System\\Views\\Student\\Edit.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA0AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-28T18:38:59.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Add.cshtml",
+              "DocumentMoniker": "D:\\Courses\\Repos\\DEPI\\MVC\\MVC D04 G01(Ali Emad Ali)\\Company_System\\Company_System\\Views\\Student\\Add.cshtml",
+              "RelativeDocumentMoniker": "Company_System\\Views\\Student\\Add.cshtml",
+              "ToolTip": "D:\\Courses\\Repos\\DEPI\\MVC\\MVC D04 G01(Ali Emad Ali)\\Company_System\\Company_System\\Views\\Student\\Add.cshtml",
+              "RelativeToolTip": "Company_System\\Views\\Student\\Add.cshtml",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAswB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-28T18:33:06.252Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GetById.cshtml",
+              "DocumentMoniker": "D:\\Courses\\Repos\\DEPI\\MVC\\MVC D04 G01(Ali Emad Ali)\\Company_System\\Company_System\\Views\\Student\\GetById.cshtml",
+              "RelativeDocumentMoniker": "Company_System\\Views\\Student\\GetById.cshtml",
+              "ToolTip": "D:\\Courses\\Repos\\DEPI\\MVC\\MVC D04 G01(Ali Emad Ali)\\Company_System\\Company_System\\Views\\Student\\GetById.cshtml",
+              "RelativeToolTip": "Company_System\\Views\\Student\\GetById.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-28T18:13:28.088Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ShowAll.cshtml",
+              "DocumentMoniker": "D:\\Courses\\Repos\\DEPI\\MVC\\MVC D04 G01(Ali Emad Ali)\\Company_System\\Company_System\\Views\\Student\\ShowAll.cshtml",
+              "RelativeDocumentMoniker": "Company_System\\Views\\Student\\ShowAll.cshtml",
+              "ToolTip": "D:\\Courses\\Repos\\DEPI\\MVC\\MVC D04 G01(Ali Emad Ali)\\Company_System\\Company_System\\Views\\Student\\ShowAll.cshtml",
+              "RelativeToolTip": "Company_System\\Views\\Student\\ShowAll.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAwB4AAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-28T18:13:28.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "StudentBL.cs",
+              "DocumentMoniker": "D:\\Courses\\Repos\\DEPI\\MVC\\MVC D04 G01(Ali Emad Ali)\\Company_System\\Company_System\\Models\\StudentBL.cs",
+              "RelativeDocumentMoniker": "Company_System\\Models\\StudentBL.cs",
+              "ToolTip": "D:\\Courses\\Repos\\DEPI\\MVC\\MVC D04 G01(Ali Emad Ali)\\Company_System\\Company_System\\Models\\StudentBL.cs",
+              "RelativeToolTip": "Company_System\\Models\\StudentBL.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-28T17:48:26.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "D:\\Courses\\Repos\\DEPI\\MVC\\MVC D04 G01(Ali Emad Ali)\\Company_System\\Company_System\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "Company_System\\Controllers\\StudentController.cs",
+              "ToolTip": "D:\\Courses\\Repos\\DEPI\\MVC\\MVC D04 G01(Ali Emad Ali)\\Company_System\\Company_System\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "Company_System\\Controllers\\StudentController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAABsAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-28T17:48:21.744Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
