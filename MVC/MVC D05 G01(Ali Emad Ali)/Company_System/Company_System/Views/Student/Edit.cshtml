@@ -1,0 +1,31 @@
+﻿@model Student
+
+@{
+    ViewData["Title"] = "Edit Student";
+}
+
+<h2>Edit Student</h2>
+
+<form asp-action="Edit" method="post" class="mt-3">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Age" class="form-label"></label>
+        <input asp-for="Age" class="form-control" type="number" />
+        <span asp-validation-for="Age" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Department</label>
+        <select asp-for="DepartmentId" asp-items="ViewBag.Departments" class="form-control"></select>
+    </div>
+
+    <button type="submit" class="btn btn-warning">Update</button>
+    <a asp-action="ShowDetails" asp-route-id="@Model.Id" class="btn btn-secondary">Cancel</a>
+</form>

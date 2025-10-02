@@ -1,0 +1,41 @@
+1) CDN
+
+A CDN (Content Delivery Network) is a system of servers located
+in different regions that deliver static files like CSS, JS, and
+images. Using a CDN makes websites faster because users download
+files from the nearest server instead of the hosting server only.
+========================================================================================================
+2) min (minified)
+
+Minification is the process of removing unnecessary characters from
+source code without changing its functionality. This includes spaces,
+line breaks, tabs, and comments. For example, a normal JavaScript
+file may be 200 KB, while the .min.js version could be only 70 KB.
+Browsers download the smaller file faster, which improves performance.
+Developers usually keep both normal and minified versions: the normal
+file is easier to read during coding, while the minified one is used
+in production for efficiency.
+========================================================================================================
+3) bundle
+
+Bundling is the practice of combining multiple CSS or JavaScript
+files into one single file. Instead of the browser making 10 or 20
+requests for each file, it only makes one. This reduces the number
+of HTTP requests and improves page load speed. In older ASP.NET MVC,
+bundling and minification were done automatically with the
+System.Web.Optimization library. In modern ASP.NET Core, developers
+use tools like Webpack, Gulp, or built-in middleware to manage
+bundling and minification.
+========================================================================================================
+4) Class modelstatedictionary
+
+ModelStateDictionary is an ASP.NET Core class that stores the
+results of model binding and validation for an HTTP request. When
+a form is submitted, the Model Binder tries to map incoming values
+to your model properties. If the user forgets to fill a required
+field or enters invalid data, errors are recorded inside ModelState.
+In controllers, we usually write if (!ModelState.IsValid) to check
+if the model is valid before saving it to the database. It also
+allows us to access specific error messages and display them in the
+view next to form fields.
+========================================================================================================
