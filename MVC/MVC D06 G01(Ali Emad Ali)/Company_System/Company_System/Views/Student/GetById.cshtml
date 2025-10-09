@@ -1,0 +1,18 @@
+﻿@model Student
+
+@{
+    ViewData["Title"] = "Student Details";
+}
+
+<h2>Student Details</h2>
+
+<div class="card p-3">
+    <p><strong>ID:</strong> @Model.Id</p>
+    <p><strong>Name:</strong> @Model.Name</p>
+    <p><strong>Age:</strong> @Model.Age</p>
+    <p><strong>Department:</strong> @Model.Department?.Name</p>
+</div>
+
+<a asp-action="ShowAll" class="btn btn-secondary m-2"> Back to List</a>
+<a asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger m-2"> Delete Student</a>
+<a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning m-2"> Edit Student</a>

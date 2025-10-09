@@ -1,0 +1,24 @@
+Why we need architecture in any project:
+Architecture provides structure and organization to a project,
+ensuring scalability, maintainability, and separation of concerns.
+It helps developers manage complexity, improve code reusability, and make
+future changes or enhancements easier.
+================================================================================================
+What is N-Tier architecture:
+N-Tier (or multilayer) architecture divides an application into layers such as
+Presentation, Business Logic, and Data Access. Each layer has its own responsibility,
+making the system more organized, secure, and easier to maintain or test.
+================================================================================================
+What is Onion architecture:
+Onion architecture focuses on keeping business logic at the core,
+independent of external systems like databases or UI. It uses layers
+that depend inwardly, promoting loose coupling and testability.
+The idea is to isolate the application core from external concerns.
+================================================================================================
+Is LINQ slow in execution?
+LINQ itself isn’t slow; performance depends on how it’s used.
+The key to understanding LINQ’s speed is knowing the difference
+between deferred execution (query runs only when results are iterated)
+and eager execution (query runs immediately). Inefficient use of deferred
+queries can lead to repeated database calls and slower performance.
+================================================================================================

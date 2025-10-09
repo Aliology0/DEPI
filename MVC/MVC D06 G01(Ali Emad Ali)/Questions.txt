@@ -1,0 +1,42 @@
+4- Three use cases we need asynchronous programming
+Three primary use cases where asynchronous programming is essential are I/O-bound operations,
+maintaining UI responsiveness, and improving web server scalability. Asynchronous programming is
+ideal for I/O-bound tasks like fetching data from a web API, querying a database, or reading a large file,
+because the thread can be released to service other requests while waiting for the slow external operation to complete
+In desktop or mobile applications, using async/await ensures that the user interface (UI) thread remains responsive,
+preventing the application from freezing while a long-running background operation is in progress.
+Finally, for web servers (like ASP.NET Core), asynchronous code allows the server to handle a
+much larger number of concurrent requests by avoiding thread blocking, thereby maximizing resource
+utilization and increasing the application's overall scalability and throughput.
+====================================================================================================================
+5- What is the difference between thread and task .
+A Thread is a low-level operating system construct that represents an actual path of execution,
+consuming system resources and requiring manual management of state and synchronization.
+A Task (specifically from the Task Parallel Library, TPL) is a higher-level,
+more abstract concept that represents a promise of a unit of work or an
+asynchronous operation that will eventually complete and may return a result.
+Unlike a Thread, a Task typically does not manage its own underlying thread;
+instead, it leverages the .NET Thread Pool for execution, making it much more
+lightweight and efficient for handling many concurrent, short-lived operations.
+Tasks provide built-in features for composition, exception handling, and cancellation tokens,
+which simplify asynchronous programming compared to managing raw threads directly.
+====================================================================================================================
+6- What are the new features in .NET 9 to make operations on Generic type
+One significant new feature in .NET 9 that enhances operations on generic types is the improved support for
+shared generics with JIT inlining, particularly beneficial for performance-critical libraries like TensorPrimitives.
+Historically, shared generic methods that required run-time lookups (to determine the concrete type T) could not be
+inlined by the JIT compiler, leading to performance overhead. In .NET 9, the runtime has been enhanced to lift this
+restriction, allowing the JIT compiler to freely inline shared generic methods. This improvement enables optimizations
+that can lead to hundreds of performance gains in benchmarks by reducing overhead and allowing for better code
+specialization, especially in scenarios involving numerical computations.
+====================================================================================================================
+7- What are delegate built-in types in details
+The three main built-in generic delegate types in C# are Action, Func, and Predicate,
+which eliminate the need to define custom delegate types for common scenarios.
+An Action delegate is used to encapsulate a method that accepts zero to sixteen
+input parameters but does not return a value (i.e., a void return type).
+A Func delegate is the most versatile, used to encapsulate a method that accepts
+zero to sixteen input parameters and returns a value of a specified type (the last type parameter).
+Finally, a Predicate<T> delegate is a specialized version of Func that takes exactly one input parameter
+of type T and returns a boolean value, making it ideal for defining criteria for filtering or checking conditions.
+====================================================================================================================
