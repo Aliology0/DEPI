@@ -1,0 +1,43 @@
+1. Custom Attributes in Client-Side Validation
+
+In ASP.NET MVC or ASP.NET Core MVC, custom validation attributes handle
+server-side checks by default but don’t automatically support client-side
+validation through jQuery Unobtrusive Validation. To make them work on the
+client side, developers can implement the IClientValidatable interface, which
+allows generating data-val-* attributes automatically in the rendered HTML.
+This provides immediate feedback to users without waiting for a postback.
+Alternatively, developers can manually inject validation attributes using custom
+Tag Helpers or implement validation entirely with JavaScript and AJAX. However,
+the recommended approach is using IClientValidatable for consistency and
+better integration with MVC’s validation pipeline.
+================================================================================================
+2. Three Cases of Using Custom Middleware
+
+Custom middleware in ASP.NET Core is used to handle cross-cutting concerns
+within the request pipeline.
+
+Request Logging and Diagnostics: Middleware can capture and log details
+about each request and response, such as URLs, headers, and processing time,
+which helps in monitoring and debugging.
+
+Authentication and Authorization: Middleware can intercept requests to
+verify tokens, credentials, or user roles before they reach controllers, ensuring
+that only authorized users access protected resources.
+
+Exception Handling: Middleware can catch unhandled exceptions, log them,
+and return user-friendly error responses, improving the application’s stability.
+Overall, custom middleware simplifies maintaining centralized logic for common
+tasks like logging, security, and error handling.
+================================================================================================
+3. New Features in .NET 9 for Generic Types
+
+.NET 9 introduces several enhancements that make working with generic types
+more powerful and efficient. Developers can now use ref struct types as
+generic parameters, enabling high-performance, stack-only operations. New
+LINQ methods, such as CountBy and AggregateBy, provide more optimized
+ways to group and aggregate data. The framework also adds new generic
+collections, including OrderedDictionary<TKey, TValue> for ordered key-value
+storage, and ReadOnlySet<T> for immutable set operations. These improvements
+enhance type safety, performance, and flexibility in generic programming within
+.NET 9.
+================================================================================================
