@@ -1,0 +1,37 @@
+1) Use Cases for Singleton and Transient
+In dependency injection, the lifetime of a service determines how long an
+instance of that service lives. A Singleton service is created once and shared
+throughout the application's lifetime. It’s useful for logging, configuration, or
+caching where shared state or performance optimization is needed. A Transient
+service creates a new instance every time it is requested, making it suitable for
+lightweight, stateless operations like validation, formatting, or per-request
+business logic where data isolation is required.
+==========================================================================================
+2) Builder Design Pattern
+The Builder Pattern separates the construction of a complex object from its
+representation, allowing the same construction process to create different
+representations. It helps when objects require many optional parameters or
+complex setup steps. Instead of passing numerous arguments to a constructor,
+a builder class provides methods to set each part and a final build method to
+assemble the object. This improves code readability and flexibility, especially
+in scenarios such as creating configuration objects or constructing UI elements.
+==========================================================================================
+3) Constraints >> Alpha
+Constraints are rules applied to restrict or define acceptable values for a
+generic type in C#. For example, where T : class means the type must be a
+reference type. The “alpha” concept usually refers to the early alpha phase
+in software development, where constraints or rules are still being tested,
+refined, and adjusted based on design feedback. In generics, constraints ensure
+type safety, while in early alpha development, constraints define system limits
+and expected behaviors before release.
+==========================================================================================
+4) IServiceCollection, ServiceDescriptor, and ServiceProvider
+In ASP.NET Core dependency injection, IServiceCollection is the main
+container where all dependencies are registered. ServiceDescriptor represents
+a single service mapping, describing how a service type relates to its
+implementation and lifetime (singleton, scoped, or transient). ServiceProvider
+is the actual runtime container that resolves dependencies based on the
+registrations. When the application starts, IServiceCollection builds a
+ServiceProvider, which is then used to create and inject the required objects
+throughout the application.
+==========================================================================================

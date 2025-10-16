@@ -1,0 +1,29 @@
+4) Handling Security Issues in Connection Strings
+
+Storing a connection string directly in code is risky because it exposes sensitive
+information such as database credentials. There are several secure approaches to
+avoid hard-coding this data.
+(1) Store the connection string inside the appsettings.json file and read it
+using configuration binding.
+(2) Use Environment Variables so credentials are loaded from the server
+environment at runtime.
+(3) Use Secret Managers or Azure Key Vault to securely store and retrieve
+connection strings or keys during development and deployment. These methods help
+protect confidential information
+=============================================================================================
+5) AJAX (Asynchronous JavaScript and XML) is a technique used in web
+applications to send and receive data from the server asynchronously
+without reloading the entire page. It allows for smoother and faster
+interactions, enhancing the user experience. In MVC applications, AJAX
+is often used to update specific parts of a webpage dynamically based on
+user actions.
+
+Three main reasons to use AJAX in MVC apps are:
+1- It improves performance by avoiding full page reloads.
+2- It reduces server load by sending and receiving only required data.
+3- It enhances user experience with faster and more responsive updates.
+=============================================================================================
+Simple Demo:
+When a user selects a student from a dropdown list, AJAX sends the
+student ID to the server and returns the corresponding details, updating
+only that part of the page without refreshing the entire view.

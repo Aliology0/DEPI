@@ -1,0 +1,41 @@
+﻿@model List<Department>
+
+@{
+    ViewData["Title"] = "All Departments";
+}
+
+<h2>Departments</h2>
+
+<a asp-controller="Department" asp-action="Add" class="btn btn-success mb-3">Add New Department</a>
+
+<table class="table table-hover table-bordered">
+    <thead class="table-light">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Manager</th>
+            <th>Students Count</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var dept in Model)
+        {
+            <tr>
+                <td>@dept.Id</td>
+                <td>@dept.Name</td>
+                <td>@dept.MgrName</td>
+                <td>@dept.Students?.Count</td>
+                <td>
+                    <a asp-controller="Department" asp-action="ShowDetailsById" asp-route-id="@dept.Id" class="btn btn-info btn-sm">Details</a>
+                    <a asp-controller="Department" asp-action="Edit" asp-route-id="@dept.Id" class="btn btn-warning btn-sm">Edit</a>
+
+                    <form asp-controller="Department" asp-action="Delete" asp-route-id="@dept.Id" method="post" style="display:inline">
+                        <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                    </form>
+                    <a asp-controller="Department" asp-action="AddStudent" asp-route-id="@dept.Id" class="btn btn-success btn-sm">Add Student</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
