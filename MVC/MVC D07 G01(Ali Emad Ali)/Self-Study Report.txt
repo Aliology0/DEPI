@@ -1,0 +1,26 @@
+1) Inline Initialization & Constructor Initialization
+Inline initialization means assigning default values to class fields or properties
+directly where they are declared. It makes code shorter and more readable by
+showing default values near the variable definitions. Constructor initialization
+happens inside a class constructor, where parameters are used to assign values
+to fields when an object is created. Inline initialization is useful for constants
+and default values, while constructor initialization is better when values must
+be provided dynamically at object creation.
+==============================================================================================
+2) Abstraction Layer
+An abstraction layer hides implementation details and exposes only the essential
+features to other parts of the system. It allows developers to work with
+high-level concepts rather than low-level logic. In software architecture, an
+abstraction layer improves maintainability and flexibility because components
+can be modified or replaced without affecting others. For example, in an
+N-tier application, the service or interface layer acts as an abstraction between
+the UI and data layers.
+==============================================================================================
+3) Repository Pattern
+The repository pattern separates data access logic from business logic by
+providing a consistent way to query and manipulate data. Instead of working
+directly with the database or Entity Framework context, code interacts with a
+repository interface. This makes the application easier to test, maintain, and
+extend. It also promotes loose coupling and cleaner architecture, since the
+data source can be changed with minimal impact on higher layers.
+==============================================================================================
