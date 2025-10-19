@@ -1,0 +1,18 @@
+I chose Blink22, Fawry, and Egypt Software as my three target software houses in Egypt.
+===========================================================================================
+I selected Blink22 because it is a fast-growing software house known for
+building high-quality web and mobile applications for international clients using
+modern technologies like .NET, React, and Node.js. This would give me a chance to
+work in an agile, innovation-driven environment and improve my full-stack
+development skills.
+===========================================================================================
+Fawry is one of Egypt’s biggest fintech leaders, offering large-scale and secure
+payment solutions that serve millions of users daily. Working there would allow me
+to experience enterprise-level development, database optimization, and
+performance-driven systems with real-world financial impact.
+===========================================================================================
+Finally, Egypt Software focuses on business and accounting solutions tailored to
+the Egyptian market, providing an excellent opportunity to understand local
+business needs and apply practical knowledge in software design and
+implementation.
+===========================================================================================

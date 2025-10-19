@@ -1,0 +1,25 @@
+The Service Layer is an important architectural layer that sits between the
+Controller and the Repository Layer. Its main purpose is to handle the
+business logic of the application, the rules, validations, and processes that
+define how data should be managed and used.
+
+While the Repository Layer focuses only on data access (CRUD operations),
+the Service Layer focuses on application logic, deciding when and how
+to use the repository methods. This ensures that your code follows the
+Separation of Concerns principle, keeping each layer responsible for a specific
+task.
+
+For example, instead of writing business rules inside a controller, you can create
+a StudentService class that validates the student’s age, checks for duplicates,
+and then calls _studentRepository.Add(student) only if the rules are satisfied.
+This makes your controller cleaner and your business logic reusable.
+
+The main advantages of using a Service Layer include:
+
+1. Better Organization –> Keeps controllers simple and focused on UI logic.
+2. Easier Testing –> You can test business logic separately from database logic.
+3. Reusability –> The same service methods can be used across multiple controllers.
+
+By combining the Service Layer with the Repository Pattern, you achieve a
+clean and professional architecture that separates responsibilities, increases
+testability, and keeps your application logic easy to manage.

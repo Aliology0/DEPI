@@ -1,0 +1,20 @@
+﻿@model Company_System.ViewModel.StudentCourseViewModel
+
+<h2>Student Course Degree</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Student Name</th>
+        <td>@Model.StudentName</td>
+    </tr>
+    <tr>
+        <th>Course Name</th>
+        <td>@Model.CourseName</td>
+    </tr>
+    <tr>
+        <th>Degree</th>
+        <td style="color:@(Model.Degree >= Model.MinDegree ? "green" : "red")">
+            @Model.Degree
+        </td>
+    </tr>
+</table>
