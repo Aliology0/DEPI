@@ -1,9 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using Company_System.Models;
 
 namespace Company_System.Data
 {
-    public class CompanyDbContext : DbContext
+    public class CompanyDbContext : IdentityDbContext<ApplicationUser>
     {
         #region DbSets
         public DbSet<Department> Departments { get; set; }
@@ -13,16 +14,31 @@ namespace Company_System.Data
         public DbSet<StudentCourses> StudentCourses { get; set; }
         #endregion
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        public CompanyDbContext(DbContextOptions<CompanyDbContext> options)
+            : base(options)
         {
-            optionsBuilder.UseSqlServer("Server=.\\SQLEXPRESS;Database=CompanyDB;Trusted_Connection=True;TrustServerCertificate=True;");
         }
 
-        public CompanyDbContext(DbContextOptions<CompanyDbContext> options) : base(options) { }
         public CompanyDbContext() : base() { }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            if (!optionsBuilder.IsConfigured)
+            {
+                optionsBuilder.UseSqlServer(
+                    "Server=.\\SQLEXPRESS;" +
+                    "Database=CompanyDB;" +
+                    "Trusted_Connection=True;" +
+                    "TrustServerCertificate=True;"
+                );
+            }
+        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            // ✅ VERY IMPORTANT: enable Identity table configurations
+            base.OnModelCreating(modelBuilder);
+
             #region DepartmentConfiguration
             modelBuilder.Entity<Department>()
                 .HasKey(d => d.Id);
@@ -85,6 +101,5 @@ namespace Company_System.Data
                 .OnDelete(DeleteBehavior.Restrict);
             #endregion
         }
-
     }
 }

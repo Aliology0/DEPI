@@ -2,10 +2,7 @@ using Company_System.Data;
 using Company_System.Models;
 using Company_System.Repositories.Implementations;
 using Company_System.Repositories.Interfaces;
-using Microsoft.AspNetCore.Cors.Infrastructure;
-using Company_System.Repositories.Interfaces;
-using Company_System.Repositories.Implementations;
-
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,6 +12,23 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<CompanyDbContext>(options =>
     options.UseSqlServer("Server=.\\SQLEXPRESS;Database=CompanyDB;Trusted_Connection=True;TrustServerCertificate=True;"));
+
+builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
+{
+    options.Password.RequireDigit = false;
+    options.Password.RequireNonAlphanumeric = false;
+    options.Password.RequireUppercase = false;
+    options.Password.RequiredLength = 6;
+})
+    .AddEntityFrameworkStores<CompanyDbContext>()
+    .AddDefaultTokenProviders();
+
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.LoginPath = "/Account/Login";
+    options.LogoutPath = "/Account/Logout";
+    options.AccessDeniedPath = "/Account/AccessDenied";
+});
 
 builder.Services.AddScoped<ICourseRepository, CourseRepository>();
 builder.Services.AddScoped<IDepartmentRepository, DepartmentRepository>();

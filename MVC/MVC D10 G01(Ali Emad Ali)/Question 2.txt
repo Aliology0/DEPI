@@ -1,0 +1,7 @@
+Caching using Redis is a technique used to store frequently accessed data in memory
+to reduce the time needed to retrieve it. Redis is an in-memory data store that can act
+as a high-performance cache, improving the speed and scalability of applications.
+Instead of fetching the same data repeatedly from a slow database, the app can check
+Redis first. If the data exists in the cache, it’s returned instantly; otherwise, it’s
+fetched from the main source and stored in Redis for future requests. This approach
+helps maintain states efficiently and enhances the overall performance of web systems.

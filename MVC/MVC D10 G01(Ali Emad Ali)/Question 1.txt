@@ -1,0 +1,7 @@
+Multithreading programming is a concept that allows a program to perform multiple
+tasks at the same time. Instead of running one operation after another, it divides the
+work into smaller threads that run concurrently. This helps improve performance and
+responsiveness, especially in applications that handle heavy tasks like database access,
+file processing, or complex calculations. For example, in a web server, multithreading
+allows multiple users to be served simultaneously without waiting for each other’s
+requests to complete.
