@@ -2,32 +2,33 @@
 using TaskManagement.Core.Interfaces;
 using Core.Models;
 
-namespace TaskManagement.Api.Controllers
+namespace TaskManagement.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
     public class TasksController : ControllerBase
     {
-        private readonly ITaskRepository _taskRepository;
+        private readonly ITaskService _taskService;
 
-        public TasksController(ITaskRepository taskRepository)
+        public TasksController(ITaskService taskService)
         {
-            _taskRepository = taskRepository;
+            _taskService = taskService;
         }
 
         [HttpGet]
         public async Task<IActionResult> GetAll([FromQuery] bool? isCompleted = null, [FromQuery] bool sortByDueDateAsc = true)
         {
-            var tasks = await _taskRepository.GetAllAsync(isCompleted, sortByDueDateAsc);
+            var tasks = await _taskService.GetAllAsync(isCompleted, sortByDueDateAsc);
             return Ok(tasks);
         }
 
         [HttpGet("{id:int}")]
         public async Task<IActionResult> GetById(int id)
         {
-            var task = await _taskRepository.GetByIdAsync(id);
+            var task = await _taskService.GetByIdAsync(id);
             if (task == null)
                 return NotFound();
+
             return Ok(task);
         }
 
@@ -37,8 +38,15 @@ namespace TaskManagement.Api.Controllers
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            var created = await _taskRepository.CreateAsync(task);
-            return CreatedAtAction(nameof(GetById), new { id = created.Id }, created);
+            try
+            {
+                var created = await _taskService.CreateAsync(task);
+                return CreatedAtAction(nameof(GetById), new { id = created.Id }, created);
+            }
+            catch (ArgumentException ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
         [HttpPut("{id:int}")]
@@ -47,27 +55,26 @@ namespace TaskManagement.Api.Controllers
             if (id != task.Id)
                 return BadRequest("Task ID mismatch.");
 
-            var exists = await _taskRepository.ExistsAsync(id);
-            if (!exists)
-                return NotFound();
+            try
+            {
+                var updated = await _taskService.UpdateAsync(task);
+                if (updated == null)
+                    return NotFound();
 
-            var updated = await _taskRepository.UpdateAsync(task);
-            if (updated == null)
-                return StatusCode(500, "Failed to update task.");
-
-            return NoContent();
+                return NoContent();
+            }
+            catch (ArgumentException ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
         [HttpDelete("{id:int}")]
         public async Task<IActionResult> Delete(int id)
         {
-            var exists = await _taskRepository.ExistsAsync(id);
-            if (!exists)
-                return NotFound();
-
-            var deleted = await _taskRepository.DeleteAsync(id);
+            var deleted = await _taskService.DeleteAsync(id);
             if (!deleted)
-                return StatusCode(500, "Failed to delete task.");
+                return NotFound();
 
             return NoContent();
         }
