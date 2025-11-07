@@ -1,6 +1,6 @@
 ﻿using Core.Models;
 
-namespace TaskManagement.Core.Interfaces
+namespace TaskManagement.Service.Interfaces
 {
     public interface ITaskService
     {

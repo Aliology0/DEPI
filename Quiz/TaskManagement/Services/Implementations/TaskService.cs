@@ -1,7 +1,8 @@
 ﻿using Core.Models;
 using TaskManagement.Core.Interfaces;
+using TaskManagement.Service.Interfaces;
 
-namespace TaskManagement.Infrastructure.Services
+namespace TaskManagement.Service.Implementations
 {
     public class TaskService : ITaskService
     {
