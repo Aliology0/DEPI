@@ -1,0 +1,62 @@
+1. What, When and Why API Versioning?
+API versioning is the practice of managing changes in an
+API without disrupting existing users. It allows developers
+to release new features, fix bugs, or restructure data
+formats while keeping backward compatibility. Versioning
+is used when major changes occur — for example, altering
+response structures or removing endpoints. It ensures that
+clients using old versions can still function smoothly while
+new clients benefit from improvements. Common approaches
+include using the URL path (e.g., /v1/), request headers, or
+query parameters. The main reason for versioning is to
+provide stability, predictability, and flexibility for API
+consumers while allowing the API to evolve over time.
+
+2. What are REST Principles?
+REST (Representational State Transfer) is an architectural
+style for designing networked applications. It relies on
+stateless communication between client and server, usually
+using HTTP. The key principles include:
+1. Statelessness: Each request must contain all the
+information needed to process it.
+2. Client-Server Separation: The client and server work
+independently, enabling scalability and modularity.
+3. Uniform Interface: Resources are accessed through
+standard methods like GET, POST, PUT, DELETE.
+4. Cacheability: Responses can be cached to improve
+performance.
+5. Layered System: APIs can be built in layers for
+security and scalability.
+6. Code on Demand (optional): Servers can send
+executable code to clients when needed.
+Together, these principles make RESTful APIs reliable,
+scalable, and easy to maintain.
+
+3. What are REST Naming Conventions?
+REST naming conventions make APIs consistent, readable,
+and predictable. Best practices include:
+- Use nouns, not verbs, for resource names
+  (e.g., /users, not /getUsers).
+- Use plural nouns for collections
+  (e.g., /products, /orders).
+- Use lowercase letters and hyphens for readability
+  (e.g., /user-profiles).
+- Use path hierarchy to show relationships
+  (e.g., /users/123/orders).
+- Avoid file extensions in URLs (e.g., no .json or .xml).
+- Keep URLs simple and descriptive to improve usability.
+Following these conventions helps maintain uniformity and
+makes APIs easier to understand and integrate with.
+
+4. What, When and Why Rate Limiting?
+Rate limiting is a technique used to control the number of
+requests a client can make to an API within a certain time
+frame. It prevents abuse, server overload, and denial of
+service attacks. Rate limiting is implemented when an API
+is public, high-traffic, or performance-sensitive. It helps
+ensure fair usage among all clients and protects resources
+from being exhausted by excessive requests. Common methods
+include fixed window, sliding window, and token bucket
+algorithms. The main reasons for rate limiting are to
+enhance security, maintain performance, and ensure a
+reliable experience for all API users.
