@@ -1,0 +1,27 @@
+What is record in C#, and how is it related to DTOs?
+
+A record in C# is a special type introduced to simplify the
+creation of objects that mainly store data without requiring a
+lot of boilerplate code. Records are immutable by default,
+meaning once created their values cannot be changed, which
+makes them very suitable for representing data that is only
+passed around and not modified. This fits well with the
+concept of a Data Transfer Object, because DTOs are usually
+used only to carry data between layers of an application
+without containing business logic. Using a record for a DTO
+reduces code, improves readability, and naturally enforces the
+idea that DTOs should not change after creation.
+============================================================================================================
+What is a tuple in C#, and how is it related to data structures?
+
+A tuple in C# is a lightweight data structure that can hold
+multiple values of different types without needing to define a
+full class or record. Tuples are useful for returning more
+than one value from a method, grouping temporary data, or
+quickly combining values in memory. Their relationship to data
+structures is that they offer a simple way to store structured
+data but are not usually used as permanent domain objects.
+Tuples provide quick and flexible data grouping, while more
+formal data structures such as classes, records, and structs
+provide better long-term organization and clarity.
+============================================================================================================
